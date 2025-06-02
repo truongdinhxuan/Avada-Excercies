@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th,
+    td {
+        padding: 12px;
+        text-align: left;
+        border: 1px solid #ccc;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        color: #333;
+    }
+
+    tr:nth-child(even) {
+        background-color: #fafafa;
+    }
+
+    img {
+        border-radius: 4px;
+    }
+</style>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Created At</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% products.forEach(product=> { %>
+                <tr>
+                    <td>
+                        <% if (product.image) { %>
+                            <img src="<%= product.image %>" alt="<%= product.name %>"
+                                style="width: 50px; height: 50px; object-fit: cover;">
+                            <% } else { %>
+                                Ảnh không tồn tại
+                                <% } %>
+                    </td>
+                    <td>
+                        <%= product.name %>
+                    </td>
+                    <td>$<%= product.price %>
+                    </td>
+                    <td>
+                        <%= new Date(product.createdAt).toLocaleDateString() %>
+                    </td>
+                </tr>
+                <% }) %>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

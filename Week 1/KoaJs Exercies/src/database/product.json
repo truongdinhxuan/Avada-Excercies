@@ -1,0 +1,97 @@
+{
+  "data": [
+    {
+      "id": 15,
+      "name": "anh iu em lammmmmm",
+      "price": 199,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/AK-47_assault_rifle.jpg",
+      "createdAt": "2025-05-29T16:16:31.159Z"
+    },
+    {
+      "id": 14,
+      "name": "anh iu em",
+      "price": 12.49,
+      "image": "https://static.wikia.nocookie.net/naruto-viet-nam/images/4/49/Naruto_Shipp%C5%ABden_Logo-1.png/revision/latest?cb=20170427074448&path-prefix=vi",
+      "createdAt": "2025-05-29T16:11:33.457Z"
+    },
+    {
+      "id": 13,
+      "name": "1 Smart LED Bulb2",
+      "price": 12.49,
+      "image": "https://static.wikia.nocookie.net/naruto-viet-nam/images/4/49/Naruto_Shipp%C5%ABden_Logo-1.png/revision/latest?cb=20170427074448&path-prefix=vi",
+      "createdAt": "2025-05-29T16:10:05.577Z"
+    },
+    {
+      "id": 1,
+      "name": "Smart LED Bulb 1",
+      "price": 12.59,
+      "createdAt": "2025-05-28T01:10:00Z"
+    },
+    {
+      "id": 2,
+      "name": 123,
+      "price": 12.69,
+      "createdAt": "2025-05-28T01:20:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Smart LED Bulb 3",
+      "price": 12.79,
+      "createdAt": "2025-05-28T01:30:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Smart LED Bulb 4",
+      "price": 12.89,
+      "createdAt": "2025-05-28T01:40:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Smart LED Bulb 5",
+      "price": 12.99,
+      "createdAt": "2025-05-28T01:50:00Z"
+    },
+    {
+      "id": 6,
+      "name": "Smart LED Bulb 6",
+      "price": 13.09,
+      "createdAt": "2025-05-28T02:00:00Z"
+    },
+    {
+      "id": 7,
+      "name": "Smart LED Bulb 7",
+      "price": 13.19,
+      "createdAt": "2025-05-28T02:10:00Z"
+    },
+    {
+      "id": 8,
+      "name": "Smart LED Bulb 8",
+      "price": 13.29,
+      "createdAt": "2025-05-28T02:20:00Z"
+    },
+    {
+      "id": 9,
+      "name": "Smart LED Bulb 9",
+      "price": 13.39,
+      "createdAt": "2025-05-28T02:30:00Z"
+    },
+    {
+      "id": 10,
+      "name": "Smart LED Bulb 10",
+      "price": 13.49,
+      "createdAt": "2025-05-28T02:40:00Z"
+    },
+    {
+      "id": 11,
+      "name": "Smart LED Bulb 11",
+      "price": 13.59,
+      "createdAt": "2025-05-28T02:50:00Z"
+    },
+    {
+      "id": 12,
+      "name": "Smart LED Bulb 12",
+      "price": 13.69,
+      "createdAt": "2025-05-28T03:00:00Z"
+    }
+  ]
+}
