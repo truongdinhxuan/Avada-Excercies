@@ -1,31 +1,44 @@
 import { Text, Badge, Button } from "@shopify/polaris"
-const GroupActions = ({ title }) => {
-    
-    const value = [
-        
-    ]
-
+import { useCallback } from "react"
+const GroupActions = ({ onDelete, title, isComplete, handleIsComplete }) => {
+    // Delete a todo
+    const handleDelete = () => {
+        onDelete()
+    }
+    const handleToggleComplete = () => {
+        handleIsComplete()
+    }
     return (
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <Text
                 fontWeight="bold"
             >
                 {title}
             </Text>
             <div className="group-actions">
-                
+                {isComplete
+                ?<Badge
+                    tone="success"
+                >
+                    <span style={{ fontWeight: 'bold' }}>
+                        Complete
+                    </span>
+                </Badge>
+                :
                 <Badge
                     tone="attention"
                 >
-                    <span style={{fontWeight: 'bold'}}>
+                    <span style={{ fontWeight: 'bold' }}>
                         Incomplete
                     </span>
-                </Badge>
-                
-                <Button>Complete</Button>
+                </Badge>}
                 
                 <Button
+                    onClick={handleToggleComplete}
+                >Complete</Button>
+                <Button
                     tone="critical"
+                    onClick={handleDelete}
                 >
                     Delete
                 </Button>
