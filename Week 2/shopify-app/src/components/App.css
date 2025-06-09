@@ -1,6 +1,7 @@
 .Polaris-Frame__Content {
   background-color: white;
 }
+
 .Polaris-ResourceList__HeaderWrapper {
   background: white;
   border: none;
@@ -18,9 +19,11 @@
   justify-content: center;
   margin-top: 16px
 }
-.actions-bulk > .Polaris-ShadowBevel > .Polaris-Box {
+
+.actions-bulk>.Polaris-ShadowBevel>.Polaris-Box {
   padding: 12px
 }
+
 .group-actions-bulk {
   display: flex;
   justify-content: center;

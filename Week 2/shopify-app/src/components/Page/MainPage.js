@@ -6,6 +6,14 @@ import CreateModal from "./CreateModal"
 import BulkAction from "./BulkActions"
 import { ITEMS } from "../../contants"
 
+import { ITEMS } from "../../constants/constants"
+
+
+/**
+ * @description MainPage component that renders a page with a list of todo items, a modal for creating new items, and bulk actions for selected items.
+ * @returns {JSX.Element} - The rendered MainPage component.
+ */
+
 function MainPage() {
     const [isActiveModal, setIsActiveModal] = useState(false)
     const [selectedItems, setSelectedItems] = useState([])
@@ -87,7 +95,6 @@ function MainPage() {
         )
         setSelectedItems([])
     }, [])
-
     // Main body page
     const BodyPage = (
         <Box>

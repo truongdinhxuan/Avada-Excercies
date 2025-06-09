@@ -1,8 +1,8 @@
 // 3. Filter only users with more than 3 comments.
-import { fetchAllData } from '../HelperAPI.js'
-
-const fetchAPI = async () => {
-    const { users, comments, posts } = await fetchAllData()
+const {APIHelper} = require ('../APIHelper')
+const loadData = async () => {
+    const { users, comments, posts } = await APIHelper()
+    //helper
     // console.log(comments)
     const mergeData = users.map(user => {
         const userPosts = posts.filter(post => post.userId === user.id);
@@ -21,4 +21,4 @@ const fetchAPI = async () => {
 
 }
 
-fetchAPI()
+loadData()

@@ -1,7 +1,7 @@
 //Sort the list of users by the postsCount value descending?
-import { fetchAllData } from '../HelperAPI.js'
-const fetchAPI = async () => {
-    const { users, comments, posts } = await fetchAllData()
+const {APIHelper} = require ('../APIHelper')
+const loadData = async () => {
+    const { users, comments, posts } = await APIHelper()
     // console.log(comments)
     const mergeData = users.map(user => {
         const userPosts = posts.filter(post => post.userId === user.id);
@@ -20,4 +20,4 @@ const fetchAPI = async () => {
     console.dir(mergeData, { depth: null })
 }
 
-fetchAPI()
+loadData()

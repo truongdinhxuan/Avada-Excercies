@@ -5,9 +5,9 @@ import TodoForm from './todo/TodoForm';
 
 function App() {
   const todoList = [
-    { text: "Todo 1", isCompleted: false },
-    { text: "Todo 2", isCompleted: false },
-    { text: "Todo 3", isCompleted: false },
+    { text: "Todo 1", isCompleted: false, isRemoved: false },
+    { text: "Todo 2", isCompleted: false, isRemoved: false },
+    { text: "Todo 3", isCompleted: false, isRemoved: false },
   ]
   const [todos, setTodos] = useState(todoList)
 
@@ -28,15 +28,17 @@ function App() {
   return (
     <div className="app">
       <div className='todo-list'>
-        {todos.map((todoList, index) => (
-          <Todo
-            key={index}
-            index={index}
-            todo={todoList}
-            completeTodo={completeTodo}
-            removeTodo={removeTodo}
-          />
-        ))}
+        {todos.map((todoList, index) => 
+          !todoList.isRemoved && (
+            <Todo
+              key={index}
+              index={index}
+              todo={todoList}
+              completeTodo={completeTodo}
+              removeTodo={removeTodo}
+            />
+          )
+        )}
         <TodoForm
           addTodo={addTodo}
         />

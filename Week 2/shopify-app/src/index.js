@@ -7,6 +7,7 @@ import { AppProvider } from '@shopify/polaris';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  //tim hieu
   <AppProvider i18n={en}>
     <React.StrictMode>
       <App />

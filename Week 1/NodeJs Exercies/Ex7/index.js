@@ -1,16 +1,27 @@
-const loadData = async () => {
-    const [responsePost, responseComment] = await Promise.all([
-        fetch("https://jsonplaceholder.typicode.com/posts/1"),
-        fetch("https://jsonplaceholder.typicode.com/comments?postId=1")
-    ])
-    const post = await responsePost.json()
-    const comments = await responseComment.json()
-
+/**
+ * 
+ * @param {*} id 
+ */
+const fetchPostAndComments = async (id) => {
+    const [post, comments] = await Promise.all([
+        fetchAPI("/posts/" + id), 
+        fetchAPI(`/comments?postId=${id}`) // string literal
+    ]);
     const mergeData = {
         ...post,
-        comments: comments
+        comments
     }
     console.log(mergeData)
 }
 
-loadData()
+/**
+ * 
+ * @param {*} url 
+ * @returns 
+ */
+async function fetchAPI(url) {
+    const response = await fetch("https://jsonplaceholder.typicode.com" + url);
+    const data = await response.json();
+
+    return data;
+}

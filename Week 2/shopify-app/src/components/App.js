@@ -3,6 +3,7 @@ import '@shopify/polaris/build/esm/styles.css';
 import './App.css';
 import Header from './TopBar/TopBar';
 import MainPage from './Page/MainPage';
+import en from '@shopify/polaris/locales/vi.json';
 // import ResourceList from './Resource List/ResourceList';
 function App() {
   const Logo = {
@@ -14,12 +15,12 @@ function App() {
   };
   return (
     <>
-      <AppProvider>
+      <AppProvider i18n={en}>
         <Frame style={{ height: '250px' }}
           topBar={<Header />}
           logo={Logo}
         >
-          <MainPage/>
+          <MainPage />
         </Frame>
       </AppProvider>
     </>
