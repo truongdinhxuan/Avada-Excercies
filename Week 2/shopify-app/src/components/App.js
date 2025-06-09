@@ -3,7 +3,7 @@ import '@shopify/polaris/build/esm/styles.css';
 import './App.css';
 import Header from './TopBar/TopBar';
 import MainPage from './Page/MainPage';
-import en from '@shopify/polaris/locales/vi.json';
+import en from '@shopify/polaris/locales/en.json';
 // import ResourceList from './Resource List/ResourceList';
 function App() {
   const Logo = {

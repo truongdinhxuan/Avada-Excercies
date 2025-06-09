@@ -4,7 +4,6 @@ import { v4 as uuidv4 } from "uuid"
 import GroupActions from "./GroupActions"
 import CreateModal from "./CreateModal"
 import BulkAction from "./BulkActions"
-import { ITEMS } from "../../contants"
 
 import { ITEMS } from "../../constants/constants"
 

@@ -1,7 +1,10 @@
 import axios from "axios"
+import dotenv from "dotenv";
+
+dotenv.config()
 
 const instance = axios.create({
-    baseURL: import.meta.env.API_URL,
+    baseURL: process.env.API_URL,
     withCredentials: true
 })
 // Add a request interceptor
