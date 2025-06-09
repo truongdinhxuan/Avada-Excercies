@@ -1,0 +1,793 @@
+[debug] [2025-06-04T07:25:51.782Z] ----------------------------------------------------------------------
+[debug] [2025-06-04T07:25:51.783Z] Command:       C:\nvm4w\nodejs\node.exe C:\nvm4w\nodejs\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2025-06-04T07:25:51.784Z] CLI Version:   14.5.1
+[debug] [2025-06-04T07:25:51.784Z] Platform:      win32
+[debug] [2025-06-04T07:25:51.784Z] Node Version:  v22.16.0
+[debug] [2025-06-04T07:25:51.784Z] Time:          Wed Jun 04 2025 14:25:51 GMT+0700 (Indochina Time)
+[debug] [2025-06-04T07:25:51.784Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-04T07:25:51.940Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-04T07:25:51.940Z] > authorizing via signed-in user (truongdx01@avadagroup.com)
+[debug] [2025-06-04T07:25:51.941Z] [iam] checking project koa-function9983 for permissions ["firebase.projects.get"]
+[debug] [2025-06-04T07:25:51.941Z] Checked if tokens are valid: true, expires at: 1749024094427
+[debug] [2025-06-04T07:25:51.941Z] Checked if tokens are valid: true, expires at: 1749024094427
+[debug] [2025-06-04T07:25:51.942Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions [none]
+[debug] [2025-06-04T07:25:51.942Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions x-goog-quota-user=projects/koa-function9983
+[debug] [2025-06-04T07:25:51.942Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-04T07:25:53.925Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions 200
+[debug] [2025-06-04T07:25:53.925Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-04T07:25:53.925Z] Checked if tokens are valid: true, expires at: 1749024094427
+[debug] [2025-06-04T07:25:53.926Z] Checked if tokens are valid: true, expires at: 1749024094427
+[debug] [2025-06-04T07:25:53.926Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/koa-function9983/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-06-04T07:25:53.926Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/koa-function9983/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/koa-function9983
+[debug] [2025-06-04T07:25:55.340Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/koa-function9983/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-06-04T07:25:55.340Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/koa-function9983/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-06-04T07:25:55.340Z] Checked if tokens are valid: true, expires at: 1749024094427
+[debug] [2025-06-04T07:25:55.340Z] Checked if tokens are valid: true, expires at: 1749024094427
+[debug] [2025-06-04T07:25:55.340Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983 [none]
+[debug] [2025-06-04T07:25:55.626Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983 200
+[debug] [2025-06-04T07:25:55.627Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983 {"projectNumber":"93908774678","projectId":"koa-function9983","lifecycleState":"ACTIVE","name":"koa-function9983","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-06-04T02:08:44.877296Z","parent":{"type":"organization","id":"568162227722"}}
+[info] 
+[info] === Serving from 'F:\Avada Training\Week 3\firebase-learn'...
+[info] 
+[debug] [2025-06-04T07:25:55.646Z] defaultcredentials: writing to file C:\Users\dinh\AppData\Roaming\firebase\truongdx01_avadagroup_com_application_default_credentials.json
+[debug] [2025-06-04T07:25:55.647Z] Setting GAC to C:\Users\dinh\AppData\Roaming\firebase\truongdx01_avadagroup_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\dinh\\AppData\\Roaming\\firebase\\truongdx01_avadagroup_com_application_default_credentials.json"}}
+[debug] [2025-06-04T07:25:55.648Z] Checked if tokens are valid: true, expires at: 1749024094427
+[debug] [2025-06-04T07:25:55.648Z] Checked if tokens are valid: true, expires at: 1749024094427
+[debug] [2025-06-04T07:25:55.648Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/adminSdkConfig [none]
+[debug] [2025-06-04T07:25:56.242Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/adminSdkConfig 200
+[debug] [2025-06-04T07:25:56.242Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/adminSdkConfig {"projectId":"koa-function9983","storageBucket":"koa-function9983.firebasestorage.app"}
+[info] i  functions: Watching "F:\Avada Training\Week 3\firebase-learn\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"F:\\Avada Training\\Week 3\\firebase-learn\\functions\" for Cloud Functions..."}}
+[debug] [2025-06-04T07:25:56.479Z] Validating nodejs source
+[debug] [2025-06-04T07:25:57.553Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "src/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "koa": "^3.0.0",
+    "koa-body": "^6.0.1",
+    "koa-router": "^13.0.1",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-06-04T07:25:57.554Z] Building nodejs source
+[debug] [2025-06-04T07:25:57.554Z] Failed to find version of module node: reached end of search path F:\Avada Training\Week 3\firebase-learn\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-06-04T07:25:57.557Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-06-04T07:25:57.563Z] Found firebase-functions binary at 'F:\Avada Training\Week 3\firebase-learn\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8087
+
+[debug] [2025-06-04T07:25:58.102Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[info] +  functions[us-central1-helloWorld]: http function initialized (http://localhost:5000/koa-function9983/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5000/koa-function9983/us-central1/helloWorld)."}}
+[debug] [2025-06-04T07:26:16.068Z] [work-queue] {"queuedWork":["/koa-function9983/us-central1/helloWorld-2025-06-04T07:26:16.068Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-04T07:26:16.069Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/koa-function9983/us-central1/helloWorld-2025-06-04T07:26:16.068Z"],"workRunningCount":1}
+[debug] [2025-06-04T07:26:16.069Z] Accepted request GET /koa-function9983/us-central1/helloWorld --> us-central1-helloWorld
+[debug] [2025-06-04T07:26:16.071Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-04T07:26:16.072Z] [functions] Got req.url=/koa-function9983/us-central1/helloWorld, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/koa-function9983/us-central1/helloWorld, mapping to path=/"}}
+[debug] [2025-06-04T07:26:16.080Z] [worker-pool] addWorker(us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-helloWorld)"}}
+[debug] [2025-06-04T07:26:16.081Z] [worker-pool] Adding worker with key us-central1-helloWorld, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-helloWorld, total=1"}}
+[debug] [2025-06-04T07:26:17.065Z] [runtime-status] [3324] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"F:\\Avada Training\\Week 3\\firebase-learn\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [3324] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"F:\\\\Avada Training\\\\Week 3\\\\firebase-learn\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2025-06-04T07:26:17.065Z] [runtime-status] [3324] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"F:\\Avada Training\\Week 3\\firebase-learn\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [3324] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"F:\\\\Avada Training\\\\Week 3\\\\firebase-learn\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-06-04T07:26:17.066Z] [runtime-status] [3324] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [3324] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2025-06-04T07:26:17.066Z] [runtime-status] [3324] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"F:\\Avada Training\\Week 3\\firebase-learn\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [3324] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"F:\\\\Avada Training\\\\Week 3\\\\firebase-learn\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-06-04T07:26:17.346Z] [runtime-status] [3324] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [3324] Checked functions.config() {\"config\":{}}"}}
+[debug] [2025-06-04T07:26:17.346Z] [runtime-status] [3324] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"6.3.2","resolution":"F:\\Avada Training\\Week 3\\firebase-learn\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [3324] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"F:\\\\Avada Training\\\\Week 3\\\\firebase-learn\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}}"}}
+[debug] [2025-06-04T07:26:17.347Z] [runtime-status] [3324] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"F:\\Avada Training\\Week 3\\firebase-learn\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [3324] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"F:\\\\Avada Training\\\\Week 3\\\\firebase-learn\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-06-04T07:26:17.352Z] [runtime-status] [3324] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"F:\\Avada Training\\Week 3\\firebase-learn\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [3324] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"F:\\\\Avada Training\\\\Week 3\\\\firebase-learn\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2025-06-04T07:26:17.354Z] [runtime-status] [3324] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"F:\\Avada Training\\Week 3\\firebase-learn\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [3324] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"F:\\\\Avada Training\\\\Week 3\\\\firebase-learn\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-06-04T07:26:17.354Z] [runtime-status] [3324] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.7.0","resolution":"F:\\Avada Training\\Week 3\\firebase-learn\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [3324] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"F:\\\\Avada Training\\\\Week 3\\\\firebase-learn\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2025-06-04T07:26:17.473Z] [runtime-status] [3324] Functions runtime initialized. {"cwd":"F:\\Avada Training\\Week 3\\firebase-learn\\functions","node_version":"22.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [3324] Functions runtime initialized. {\"cwd\":\"F:\\\\Avada Training\\\\Week 3\\\\firebase-learn\\\\functions\",\"node_version\":\"22.16.0\"}"}}
+[debug] [2025-06-04T07:26:17.473Z] [runtime-status] [3324] Listening to port: \\?\pipe\fire_emu_2ffcacf28aaedff6 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [3324] Listening to port: \\\\?\\pipe\\fire_emu_2ffcacf28aaedff6"}}
+[debug] [2025-06-04T07:26:17.511Z] [worker-us-central1-helloWorld-9697db8c-40ec-4bd1-8292-c7b74e85b911]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-9697db8c-40ec-4bd1-8292-c7b74e85b911]: IDLE"}}
+[debug] [2025-06-04T07:26:17.512Z] [worker-pool] submitRequest(triggerId=us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-helloWorld)"}}
+[info] i  functions: Beginning execution of "us-central1-helloWorld" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Beginning execution of \"us-central1-helloWorld\""}}
+[debug] [2025-06-04T07:26:17.512Z] [worker-us-central1-helloWorld-9697db8c-40ec-4bd1-8292-c7b74e85b911]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-9697db8c-40ec-4bd1-8292-c7b74e85b911]: BUSY"}}
+[debug] [2025-06-04T07:26:17.516Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-helloWorld" in 4.2919ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finished \"us-central1-helloWorld\" in 4.2919ms"}}
+[debug] [2025-06-04T07:26:17.517Z] [worker-us-central1-helloWorld-9697db8c-40ec-4bd1-8292-c7b74e85b911]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-9697db8c-40ec-4bd1-8292-c7b74e85b911]: IDLE"}}
+[debug] [2025-06-04T07:26:17.517Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-04T07:26:17.517Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-04T07:26:17.517Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-04T07:26:17.679Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2025-06-04T07:26:24.957Z] [work-queue] {"queuedWork":["/koa-function9983/us-central1/helloWorld/api/helloworld-2025-06-04T07:26:24.957Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-04T07:26:24.958Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/koa-function9983/us-central1/helloWorld/api/helloworld-2025-06-04T07:26:24.957Z"],"workRunningCount":1}
+[debug] [2025-06-04T07:26:24.958Z] Accepted request GET /koa-function9983/us-central1/helloWorld/api/helloworld --> us-central1-helloWorld
+[debug] [2025-06-04T07:26:24.961Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-04T07:26:24.961Z] [functions] Got req.url=/koa-function9983/us-central1/helloWorld/api/helloworld, mapping to path=/api/helloworld {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/koa-function9983/us-central1/helloWorld/api/helloworld, mapping to path=/api/helloworld"}}
+[debug] [2025-06-04T07:26:24.962Z] [worker-pool] submitRequest(triggerId=us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-helloWorld)"}}
+[info] i  functions: Beginning execution of "us-central1-helloWorld" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Beginning execution of \"us-central1-helloWorld\""}}
+[debug] [2025-06-04T07:26:24.962Z] [worker-us-central1-helloWorld-9697db8c-40ec-4bd1-8292-c7b74e85b911]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-9697db8c-40ec-4bd1-8292-c7b74e85b911]: BUSY"}}
+[debug] [2025-06-04T07:26:24.967Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-helloWorld" in 5.6564ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finished \"us-central1-helloWorld\" in 5.6564ms"}}
+[debug] [2025-06-04T07:26:24.968Z] [worker-us-central1-helloWorld-9697db8c-40ec-4bd1-8292-c7b74e85b911]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-9697db8c-40ec-4bd1-8292-c7b74e85b911]: IDLE"}}
+[debug] [2025-06-04T07:26:24.968Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-04T07:26:24.968Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-04T07:26:24.969Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] Shutting down...
+[debug] [2025-06-04T07:49:55.087Z] [worker-us-central1-helloWorld-9697db8c-40ec-4bd1-8292-c7b74e85b911]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-9697db8c-40ec-4bd1-8292-c7b74e85b911]: exited"}}
+[debug] [2025-06-04T07:49:55.088Z] [worker-us-central1-helloWorld-9697db8c-40ec-4bd1-8292-c7b74e85b911]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-9697db8c-40ec-4bd1-8292-c7b74e85b911]: FINISHED"}}
+[debug] [2025-06-04T07:49:57.868Z] ----------------------------------------------------------------------
+[debug] [2025-06-04T07:49:57.871Z] Command:       C:\nvm4w\nodejs\node.exe C:\nvm4w\nodejs\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2025-06-04T07:49:57.871Z] CLI Version:   14.5.1
+[debug] [2025-06-04T07:49:57.871Z] Platform:      win32
+[debug] [2025-06-04T07:49:57.871Z] Node Version:  v22.16.0
+[debug] [2025-06-04T07:49:57.871Z] Time:          Wed Jun 04 2025 14:49:57 GMT+0700 (Indochina Time)
+[debug] [2025-06-04T07:49:57.871Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-04T07:49:58.053Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-04T07:49:58.054Z] > authorizing via signed-in user (truongdx01@avadagroup.com)
+[debug] [2025-06-04T07:49:58.054Z] [iam] checking project koa-function9983 for permissions ["firebase.projects.get"]
+[debug] [2025-06-04T07:49:58.055Z] Checked if tokens are valid: false, expires at: 1749024094427
+[debug] [2025-06-04T07:49:58.055Z] Checked if tokens are valid: false, expires at: 1749024094427
+[debug] [2025-06-04T07:49:58.056Z] > refreshing access token with scopes: []
+[debug] [2025-06-04T07:49:58.058Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-06-04T07:49:58.058Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-06-04T07:49:58.222Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-06-04T07:49:58.222Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-06-04T07:49:58.240Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions [none]
+[debug] [2025-06-04T07:49:58.240Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions x-goog-quota-user=projects/koa-function9983
+[debug] [2025-06-04T07:49:58.240Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-04T07:49:59.274Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions 200
+[debug] [2025-06-04T07:49:59.274Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-04T07:49:59.275Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:49:59.275Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:49:59.275Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/koa-function9983/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-06-04T07:49:59.275Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/koa-function9983/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/koa-function9983
+[debug] [2025-06-04T07:50:01.378Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/koa-function9983/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-06-04T07:50:01.378Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/koa-function9983/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-06-04T07:50:01.379Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:50:01.379Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:50:01.379Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983 [none]
+[debug] [2025-06-04T07:50:01.664Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983 200
+[debug] [2025-06-04T07:50:01.664Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983 {"projectNumber":"93908774678","projectId":"koa-function9983","lifecycleState":"ACTIVE","name":"koa-function9983","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-06-04T02:08:44.877296Z","parent":{"type":"organization","id":"568162227722"}}
+[info] 
+[info] === Serving from 'F:\Avada Training\Week 3\firebase-learn'...
+[info] 
+[debug] [2025-06-04T07:50:01.669Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:50:01.669Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:50:01.674Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/koa-function9983/sites 
+[debug] [2025-06-04T07:50:01.678Z] defaultcredentials: writing to file C:\Users\dinh\AppData\Roaming\firebase\truongdx01_avadagroup_com_application_default_credentials.json
+[debug] [2025-06-04T07:50:01.680Z] Setting GAC to C:\Users\dinh\AppData\Roaming\firebase\truongdx01_avadagroup_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\dinh\\AppData\\Roaming\\firebase\\truongdx01_avadagroup_com_application_default_credentials.json"}}
+[debug] [2025-06-04T07:50:01.680Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:50:01.680Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:50:01.680Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/adminSdkConfig [none]
+[debug] [2025-06-04T07:50:02.149Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/adminSdkConfig 200
+[debug] [2025-06-04T07:50:02.149Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/adminSdkConfig {"projectId":"koa-function9983","storageBucket":"koa-function9983.firebasestorage.app"}
+[debug] [2025-06-04T07:50:02.369Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/koa-function9983/sites 200
+[debug] [2025-06-04T07:50:02.370Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/koa-function9983/sites {"sites":[{"name":"projects/koa-function9983/sites/koa-function9983","defaultUrl":"https://koa-function9983.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-06-04T07:50:02.370Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:50:02.370Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:50:02.370Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/webApps/-/config [none]
+[debug] [2025-06-04T07:50:02.809Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/webApps/-/config 200
+[debug] [2025-06-04T07:50:02.809Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/webApps/-/config {"projectId":"koa-function9983","storageBucket":"koa-function9983.firebasestorage.app","apiKey":"AIzaSyAxVfhL-vnG7dVsjZr032bIRME9AXGdUlw","authDomain":"koa-function9983.firebaseapp.com","messagingSenderId":"93908774678"}
+[debug] [2025-06-04T07:50:02.834Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:50:02.834Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:50:02.834Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983 [none]
+[debug] [2025-06-04T07:50:03.163Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983 200
+[debug] [2025-06-04T07:50:03.163Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983 {"projectId":"koa-function9983","projectNumber":"93908774678","displayName":"koa-function9983","name":"projects/koa-function9983","resources":{"hostingSite":"koa-function9983"},"state":"ACTIVE","etag":"1_1b1bc109-f8f1-4c53-b12d-60425b432e13"}
+[info] i  functions: Watching "F:\Avada Training\Week 3\firebase-learn\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"F:\\Avada Training\\Week 3\\firebase-learn\\functions\" for Cloud Functions..."}}
+[info] i  hosting[koa-function9983]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[koa-function9983]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2025-06-04T07:50:03.287Z] Validating nodejs source
+[debug] [2025-06-04T07:50:04.094Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "src/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "koa": "^3.0.0",
+    "koa-body": "^6.0.1",
+    "koa-router": "^13.0.1",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-06-04T07:50:04.094Z] Building nodejs source
+[debug] [2025-06-04T07:50:04.095Z] Failed to find version of module node: reached end of search path F:\Avada Training\Week 3\firebase-learn\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-06-04T07:50:04.098Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-06-04T07:50:04.112Z] Found firebase-functions binary at 'F:\Avada Training\Week 3\firebase-learn\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8006
+
+[debug] [2025-06-04T07:50:04.731Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] i  hosting: ::1 - - [04/Jun/2025:07:50:08 +0000] "GET /koa-function9983/us-central1/helloWorld/api/helloworld HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:50:08 +0000] \"GET /koa-function9983/us-central1/helloWorld/api/helloworld HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[debug] [2025-06-04T07:50:08.057Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-app-compat.js [none]
+[debug] [2025-06-04T07:50:08.058Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-auth-compat.js [none]
+[debug] [2025-06-04T07:50:08.069Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-database-compat.js [none]
+[debug] [2025-06-04T07:50:08.070Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore-compat.js [none]
+[debug] [2025-06-04T07:50:08.071Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-functions-compat.js [none]
+[debug] [2025-06-04T07:50:08.071Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-messaging-compat.js [none]
+[debug] [2025-06-04T07:50:08.458Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-auth-compat.js 200
+[debug] [2025-06-04T07:50:08.458Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-auth-compat.js [stream]
+[debug] [2025-06-04T07:50:08.460Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-messaging-compat.js 200
+[debug] [2025-06-04T07:50:08.460Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-messaging-compat.js [stream]
+[debug] [2025-06-04T07:50:08.460Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-functions-compat.js 200
+[debug] [2025-06-04T07:50:08.460Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-functions-compat.js [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:50:08 +0000] "GET /__/firebase/11.8.1/firebase-functions-compat.js HTTP/1.1" 200 5749 "http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:50:08 +0000] \"GET /__/firebase/11.8.1/firebase-functions-compat.js HTTP/1.1\" 200 5749 \"http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[debug] [2025-06-04T07:50:08.462Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-app-compat.js 200
+[debug] [2025-06-04T07:50:08.462Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-app-compat.js [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:50:08 +0000] "GET /__/firebase/11.8.1/firebase-app-compat.js HTTP/1.1" 200 10175 "http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:50:08 +0000] \"GET /__/firebase/11.8.1/firebase-app-compat.js HTTP/1.1\" 200 10175 \"http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[debug] [2025-06-04T07:50:08.469Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-storage-compat.js [none]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:50:08 +0000] "GET /__/firebase/11.8.1/firebase-messaging-compat.js HTTP/1.1" 200 9968 "http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:50:08 +0000] \"GET /__/firebase/11.8.1/firebase-messaging-compat.js HTTP/1.1\" 200 9968 \"http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[debug] [2025-06-04T07:50:08.472Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-database-compat.js 200
+[debug] [2025-06-04T07:50:08.472Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-database-compat.js [stream]
+[debug] [2025-06-04T07:50:08.474Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore-compat.js 200
+[debug] [2025-06-04T07:50:08.474Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore-compat.js [stream]
+[debug] [2025-06-04T07:50:08.476Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-analytics-compat.js [none]
+[debug] [2025-06-04T07:50:08.477Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-remote-config-compat.js [none]
+[debug] [2025-06-04T07:50:08.505Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-storage-compat.js 200
+[debug] [2025-06-04T07:50:08.505Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-storage-compat.js [stream]
+[debug] [2025-06-04T07:50:08.513Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-analytics-compat.js 200
+[debug] [2025-06-04T07:50:08.513Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-analytics-compat.js [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:50:08 +0000] "GET /__/firebase/11.8.1/firebase-storage-compat.js HTTP/1.1" 200 14851 "http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:50:08 +0000] \"GET /__/firebase/11.8.1/firebase-storage-compat.js HTTP/1.1\" 200 14851 \"http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [04/Jun/2025:07:50:08 +0000] "GET /__/firebase/11.8.1/firebase-analytics-compat.js HTTP/1.1" 200 9134 "http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:50:08 +0000] \"GET /__/firebase/11.8.1/firebase-analytics-compat.js HTTP/1.1\" 200 9134 \"http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[debug] [2025-06-04T07:50:08.530Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-remote-config-compat.js 200
+[debug] [2025-06-04T07:50:08.530Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-remote-config-compat.js [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:50:08 +0000] "GET /__/firebase/11.8.1/firebase-auth-compat.js HTTP/1.1" 200 42259 "http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:50:08 +0000] \"GET /__/firebase/11.8.1/firebase-auth-compat.js HTTP/1.1\" 200 42259 \"http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[debug] [2025-06-04T07:50:08.532Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-performance-compat.js [none]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:50:08 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:50:08 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [04/Jun/2025:07:50:08 +0000] "GET /__/firebase/11.8.1/firebase-database-compat.js HTTP/1.1" 200 49887 "http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:50:08 +0000] \"GET /__/firebase/11.8.1/firebase-database-compat.js HTTP/1.1\" 200 49887 \"http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [04/Jun/2025:07:50:08 +0000] "GET /__/firebase/11.8.1/firebase-remote-config-compat.js HTTP/1.1" 200 9171 "http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:50:08 +0000] \"GET /__/firebase/11.8.1/firebase-remote-config-compat.js HTTP/1.1\" 200 9171 \"http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [04/Jun/2025:07:50:08 +0000] "GET /__/firebase/11.8.1/firebase-firestore-compat.js HTTP/1.1" 200 106394 "http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:50:08 +0000] \"GET /__/firebase/11.8.1/firebase-firestore-compat.js HTTP/1.1\" 200 106394 \"http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[debug] [2025-06-04T07:50:08.625Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-performance-compat.js 200
+[debug] [2025-06-04T07:50:08.625Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/11.8.1/firebase-performance-compat.js [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:50:08 +0000] "GET /__/firebase/11.8.1/firebase-performance-compat.js HTTP/1.1" 200 13496 "http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:50:08 +0000] \"GET /__/firebase/11.8.1/firebase-performance-compat.js HTTP/1.1\" 200 13496 \"http://localhost:5000/koa-function9983/us-central1/helloWorld/api/helloworld\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] +  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[info] +  functions[us-central1-helloWorld]: http function initialized (http://localhost:5001/koa-function9983/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/koa-function9983/us-central1/helloWorld)."}}
+[info] i  hosting: ::1 - - [04/Jun/2025:07:50:15 +0000] "GET /api/helloworld HTTP/1.1" 404 153 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:50:15 +0000] \"GET /api/helloworld HTTP/1.1\" 404 153 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [04/Jun/2025:07:50:24 +0000] "GET /api/helloworld HTTP/1.1" 404 153 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:50:24 +0000] \"GET /api/helloworld HTTP/1.1\" 404 153 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] Shutting down...
+[debug] [2025-06-04T07:50:56.896Z] ----------------------------------------------------------------------
+[debug] [2025-06-04T07:50:56.898Z] Command:       C:\nvm4w\nodejs\node.exe C:\nvm4w\nodejs\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2025-06-04T07:50:56.898Z] CLI Version:   14.5.1
+[debug] [2025-06-04T07:50:56.898Z] Platform:      win32
+[debug] [2025-06-04T07:50:56.898Z] Node Version:  v22.16.0
+[debug] [2025-06-04T07:50:56.899Z] Time:          Wed Jun 04 2025 14:50:56 GMT+0700 (Indochina Time)
+[debug] [2025-06-04T07:50:56.899Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-04T07:50:57.057Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-04T07:50:57.058Z] > authorizing via signed-in user (truongdx01@avadagroup.com)
+[debug] [2025-06-04T07:50:57.058Z] [iam] checking project koa-function9983 for permissions ["firebase.projects.get"]
+[debug] [2025-06-04T07:50:57.058Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:50:57.058Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:50:57.059Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions [none]
+[debug] [2025-06-04T07:50:57.059Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions x-goog-quota-user=projects/koa-function9983
+[debug] [2025-06-04T07:50:57.059Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-04T07:50:58.036Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions 200
+[debug] [2025-06-04T07:50:58.036Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-04T07:50:58.037Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:50:58.037Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:50:58.037Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/koa-function9983/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-06-04T07:50:58.037Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/koa-function9983/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/koa-function9983
+[debug] [2025-06-04T07:50:59.333Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/koa-function9983/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-06-04T07:50:59.333Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/koa-function9983/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-06-04T07:50:59.334Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:50:59.334Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:50:59.334Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983 [none]
+[debug] [2025-06-04T07:50:59.595Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983 200
+[debug] [2025-06-04T07:50:59.595Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983 {"projectNumber":"93908774678","projectId":"koa-function9983","lifecycleState":"ACTIVE","name":"koa-function9983","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-06-04T02:08:44.877296Z","parent":{"type":"organization","id":"568162227722"}}
+[info] 
+[info] === Serving from 'F:\Avada Training\Week 3\firebase-learn'...
+[info] 
+[debug] [2025-06-04T07:50:59.604Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:50:59.604Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:50:59.613Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/koa-function9983/sites 
+[debug] [2025-06-04T07:50:59.620Z] defaultcredentials: writing to file C:\Users\dinh\AppData\Roaming\firebase\truongdx01_avadagroup_com_application_default_credentials.json
+[debug] [2025-06-04T07:50:59.622Z] Setting GAC to C:\Users\dinh\AppData\Roaming\firebase\truongdx01_avadagroup_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\dinh\\AppData\\Roaming\\firebase\\truongdx01_avadagroup_com_application_default_credentials.json"}}
+[debug] [2025-06-04T07:50:59.622Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:50:59.622Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:50:59.622Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/adminSdkConfig [none]
+[debug] [2025-06-04T07:50:59.975Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/adminSdkConfig 200
+[debug] [2025-06-04T07:50:59.975Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/adminSdkConfig {"projectId":"koa-function9983","storageBucket":"koa-function9983.firebasestorage.app"}
+[debug] [2025-06-04T07:51:00.137Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/koa-function9983/sites 200
+[debug] [2025-06-04T07:51:00.137Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/koa-function9983/sites {"sites":[{"name":"projects/koa-function9983/sites/koa-function9983","defaultUrl":"https://koa-function9983.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-06-04T07:51:00.137Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:51:00.137Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:51:00.137Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/webApps/-/config [none]
+[debug] [2025-06-04T07:51:00.640Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/webApps/-/config 200
+[debug] [2025-06-04T07:51:00.640Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/webApps/-/config {"projectId":"koa-function9983","storageBucket":"koa-function9983.firebasestorage.app","apiKey":"AIzaSyAxVfhL-vnG7dVsjZr032bIRME9AXGdUlw","authDomain":"koa-function9983.firebaseapp.com","messagingSenderId":"93908774678"}
+[debug] [2025-06-04T07:51:00.657Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:51:00.657Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:51:00.657Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983 [none]
+[debug] [2025-06-04T07:51:00.962Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983 200
+[debug] [2025-06-04T07:51:00.962Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983 {"projectId":"koa-function9983","projectNumber":"93908774678","displayName":"koa-function9983","name":"projects/koa-function9983","resources":{"hostingSite":"koa-function9983"},"state":"ACTIVE","etag":"1_1b1bc109-f8f1-4c53-b12d-60425b432e13"}
+[info] i  functions: Watching "F:\Avada Training\Week 3\firebase-learn\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"F:\\Avada Training\\Week 3\\firebase-learn\\functions\" for Cloud Functions..."}}
+[info] i  hosting[koa-function9983]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[koa-function9983]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2025-06-04T07:51:00.992Z] Validating nodejs source
+[debug] [2025-06-04T07:51:01.826Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "src/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "koa": "^3.0.0",
+    "koa-body": "^6.0.1",
+    "koa-router": "^13.0.1",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-06-04T07:51:01.826Z] Building nodejs source
+[debug] [2025-06-04T07:51:01.827Z] Failed to find version of module node: reached end of search path F:\Avada Training\Week 3\firebase-learn\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-06-04T07:51:01.828Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-06-04T07:51:01.834Z] Found firebase-functions binary at 'F:\Avada Training\Week 3\firebase-learn\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8991
+
+[debug] [2025-06-04T07:51:02.357Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[info] +  functions[us-central1-helloWorld]: http function initialized (http://localhost:5001/koa-function9983/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/koa-function9983/us-central1/helloWorld)."}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1//api for local Function us-central1//api
+[debug] [2025-06-04T07:51:11.414Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 
+[debug] [2025-06-04T07:51:11.417Z] Functions emulator received unknown request at path /koa-function9983/us-central1//api/api/helloworld
+[debug] [2025-06-04T07:51:11.419Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 404
+[debug] [2025-06-04T07:51:11.419Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:51:11 +0000] "GET /api/helloworld HTTP/1.1" 404 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:51:11 +0000] \"GET /api/helloworld HTTP/1.1\" 404 9 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1//api for local Function us-central1//api
+[debug] [2025-06-04T07:51:12.457Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 
+[debug] [2025-06-04T07:51:12.458Z] Functions emulator received unknown request at path /koa-function9983/us-central1//api/api/helloworld
+[debug] [2025-06-04T07:51:12.459Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 404
+[debug] [2025-06-04T07:51:12.460Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:51:12 +0000] "GET /api/helloworld HTTP/1.1" 404 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:51:12 +0000] \"GET /api/helloworld HTTP/1.1\" 404 9 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1//api for local Function us-central1//api
+[debug] [2025-06-04T07:51:12.616Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 
+[debug] [2025-06-04T07:51:12.616Z] Functions emulator received unknown request at path /koa-function9983/us-central1//api/api/helloworld
+[debug] [2025-06-04T07:51:12.617Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 404
+[debug] [2025-06-04T07:51:12.617Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:51:12 +0000] "GET /api/helloworld HTTP/1.1" 404 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:51:12 +0000] \"GET /api/helloworld HTTP/1.1\" 404 9 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1//api for local Function us-central1//api
+[debug] [2025-06-04T07:51:12.790Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 
+[debug] [2025-06-04T07:51:12.791Z] Functions emulator received unknown request at path /koa-function9983/us-central1//api/api/helloworld
+[debug] [2025-06-04T07:51:12.792Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 404
+[debug] [2025-06-04T07:51:12.792Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:51:12 +0000] "GET /api/helloworld HTTP/1.1" 404 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:51:12 +0000] \"GET /api/helloworld HTTP/1.1\" 404 9 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1//api for local Function us-central1//api
+[debug] [2025-06-04T07:51:12.963Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 
+[debug] [2025-06-04T07:51:12.963Z] Functions emulator received unknown request at path /koa-function9983/us-central1//api/api/helloworld
+[debug] [2025-06-04T07:51:12.964Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 404
+[debug] [2025-06-04T07:51:12.964Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:51:12 +0000] "GET /api/helloworld HTTP/1.1" 404 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:51:12 +0000] \"GET /api/helloworld HTTP/1.1\" 404 9 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1//api for local Function us-central1//api
+[debug] [2025-06-04T07:51:13.148Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 
+[debug] [2025-06-04T07:51:13.149Z] Functions emulator received unknown request at path /koa-function9983/us-central1//api/api/helloworld
+[debug] [2025-06-04T07:51:13.150Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 404
+[debug] [2025-06-04T07:51:13.150Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:51:13 +0000] "GET /api/helloworld HTTP/1.1" 404 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:51:13 +0000] \"GET /api/helloworld HTTP/1.1\" 404 9 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1//api for local Function us-central1//api
+[debug] [2025-06-04T07:51:13.288Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 
+[debug] [2025-06-04T07:51:13.289Z] Functions emulator received unknown request at path /koa-function9983/us-central1//api/api/helloworld
+[debug] [2025-06-04T07:51:13.290Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 404
+[debug] [2025-06-04T07:51:13.290Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:51:13 +0000] "GET /api/helloworld HTTP/1.1" 404 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:51:13 +0000] \"GET /api/helloworld HTTP/1.1\" 404 9 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1//api for local Function us-central1//api
+[debug] [2025-06-04T07:51:13.460Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 
+[debug] [2025-06-04T07:51:13.462Z] Functions emulator received unknown request at path /koa-function9983/us-central1//api/api/helloworld
+[debug] [2025-06-04T07:51:13.464Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 404
+[debug] [2025-06-04T07:51:13.464Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:51:13 +0000] "GET /api/helloworld HTTP/1.1" 404 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:51:13 +0000] \"GET /api/helloworld HTTP/1.1\" 404 9 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1//api for local Function us-central1//api
+[debug] [2025-06-04T07:51:32.839Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 
+[debug] [2025-06-04T07:51:32.842Z] Functions emulator received unknown request at path /koa-function9983/us-central1//api/api/helloworld
+[debug] [2025-06-04T07:51:32.843Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 404
+[debug] [2025-06-04T07:51:32.843Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:51:32 +0000] "GET /api/helloworld HTTP/1.1" 404 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:51:32 +0000] \"GET /api/helloworld HTTP/1.1\" 404 9 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [04/Jun/2025:07:51:34 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:51:34 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [04/Jun/2025:07:51:34 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:51:34 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1//api for local Function us-central1//api
+[debug] [2025-06-04T07:51:40.579Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 
+[debug] [2025-06-04T07:51:40.582Z] Functions emulator received unknown request at path /koa-function9983/us-central1//api/api/helloworld
+[debug] [2025-06-04T07:51:40.583Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 404
+[debug] [2025-06-04T07:51:40.583Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:51:40 +0000] "GET /api/helloworld HTTP/1.1" 404 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:51:40 +0000] \"GET /api/helloworld HTTP/1.1\" 404 9 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1//api for local Function us-central1//api
+[debug] [2025-06-04T07:51:40.749Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 
+[debug] [2025-06-04T07:51:40.750Z] Functions emulator received unknown request at path /koa-function9983/us-central1//api/api/helloworld
+[debug] [2025-06-04T07:51:40.752Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 404
+[debug] [2025-06-04T07:51:40.752Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:51:40 +0000] "GET /api/helloworld HTTP/1.1" 404 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:51:40 +0000] \"GET /api/helloworld HTTP/1.1\" 404 9 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1//api for local Function us-central1//api
+[debug] [2025-06-04T07:51:40.929Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 
+[debug] [2025-06-04T07:51:40.930Z] Functions emulator received unknown request at path /koa-function9983/us-central1//api/api/helloworld
+[debug] [2025-06-04T07:51:40.931Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 404
+[debug] [2025-06-04T07:51:40.931Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:51:40 +0000] "GET /api/helloworld HTTP/1.1" 404 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:51:40 +0000] \"GET /api/helloworld HTTP/1.1\" 404 9 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1//api for local Function us-central1//api
+[debug] [2025-06-04T07:51:41.099Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 
+[debug] [2025-06-04T07:51:41.100Z] Functions emulator received unknown request at path /koa-function9983/us-central1//api/api/helloworld
+[debug] [2025-06-04T07:51:41.101Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 404
+[debug] [2025-06-04T07:51:41.101Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:51:41 +0000] "GET /api/helloworld HTTP/1.1" 404 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:51:41 +0000] \"GET /api/helloworld HTTP/1.1\" 404 9 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1//api for local Function us-central1//api
+[debug] [2025-06-04T07:51:41.405Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 
+[debug] [2025-06-04T07:51:41.406Z] Functions emulator received unknown request at path /koa-function9983/us-central1//api/api/helloworld
+[debug] [2025-06-04T07:51:41.407Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 404
+[debug] [2025-06-04T07:51:41.407Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:51:41 +0000] "GET /api/helloworld HTTP/1.1" 404 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:51:41 +0000] \"GET /api/helloworld HTTP/1.1\" 404 9 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/helloWorld to http://localhost:5001/koa-function9983/us-central1//api for local Function us-central1//api
+[debug] [2025-06-04T07:53:00.217Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloWorld 
+[debug] [2025-06-04T07:53:00.220Z] Functions emulator received unknown request at path /koa-function9983/us-central1//api/api/helloWorld
+[debug] [2025-06-04T07:53:00.222Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloWorld 404
+[debug] [2025-06-04T07:53:00.222Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloWorld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:53:00 +0000] "GET /api/helloWorld HTTP/1.1" 404 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:53:00 +0000] \"GET /api/helloWorld HTTP/1.1\" 404 9 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1//api for local Function us-central1//api
+[debug] [2025-06-04T07:53:21.949Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 
+[debug] [2025-06-04T07:53:21.951Z] Functions emulator received unknown request at path /koa-function9983/us-central1//api/api/helloworld
+[debug] [2025-06-04T07:53:21.952Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld 404
+[debug] [2025-06-04T07:53:21.952Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1//api/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:53:21 +0000] "GET /api/helloworld HTTP/1.1" 404 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:53:21 +0000] \"GET /api/helloworld HTTP/1.1\" 404 9 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] Shutting down...
+[debug] [2025-06-04T07:53:43.495Z] ----------------------------------------------------------------------
+[debug] [2025-06-04T07:53:43.497Z] Command:       C:\nvm4w\nodejs\node.exe C:\nvm4w\nodejs\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2025-06-04T07:53:43.497Z] CLI Version:   14.5.1
+[debug] [2025-06-04T07:53:43.497Z] Platform:      win32
+[debug] [2025-06-04T07:53:43.498Z] Node Version:  v22.16.0
+[debug] [2025-06-04T07:53:43.498Z] Time:          Wed Jun 04 2025 14:53:43 GMT+0700 (Indochina Time)
+[debug] [2025-06-04T07:53:43.498Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-04T07:53:43.656Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-04T07:53:43.656Z] > authorizing via signed-in user (truongdx01@avadagroup.com)
+[debug] [2025-06-04T07:53:43.656Z] [iam] checking project koa-function9983 for permissions ["firebase.projects.get"]
+[debug] [2025-06-04T07:53:43.657Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:53:43.657Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:53:43.658Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions [none]
+[debug] [2025-06-04T07:53:43.658Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions x-goog-quota-user=projects/koa-function9983
+[debug] [2025-06-04T07:53:43.658Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-04T07:53:44.608Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions 200
+[debug] [2025-06-04T07:53:44.608Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-04T07:53:44.609Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:53:44.609Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:53:44.609Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/koa-function9983/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-06-04T07:53:44.609Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/koa-function9983/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/koa-function9983
+[debug] [2025-06-04T07:53:45.965Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/koa-function9983/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-06-04T07:53:45.965Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/koa-function9983/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-06-04T07:53:45.965Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:53:45.965Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:53:45.965Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983 [none]
+[debug] [2025-06-04T07:53:46.228Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983 200
+[debug] [2025-06-04T07:53:46.228Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983 {"projectNumber":"93908774678","projectId":"koa-function9983","lifecycleState":"ACTIVE","name":"koa-function9983","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-06-04T02:08:44.877296Z","parent":{"type":"organization","id":"568162227722"}}
+[info] 
+[info] === Serving from 'F:\Avada Training\Week 3\firebase-learn'...
+[info] 
+[debug] [2025-06-04T07:53:46.237Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:53:46.237Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:53:46.246Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/koa-function9983/sites 
+[debug] [2025-06-04T07:53:46.254Z] defaultcredentials: writing to file C:\Users\dinh\AppData\Roaming\firebase\truongdx01_avadagroup_com_application_default_credentials.json
+[debug] [2025-06-04T07:53:46.255Z] Setting GAC to C:\Users\dinh\AppData\Roaming\firebase\truongdx01_avadagroup_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\dinh\\AppData\\Roaming\\firebase\\truongdx01_avadagroup_com_application_default_credentials.json"}}
+[debug] [2025-06-04T07:53:46.256Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:53:46.256Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:53:46.256Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/adminSdkConfig [none]
+[debug] [2025-06-04T07:53:46.768Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/adminSdkConfig 200
+[debug] [2025-06-04T07:53:46.768Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/adminSdkConfig {"projectId":"koa-function9983","storageBucket":"koa-function9983.firebasestorage.app"}
+[debug] [2025-06-04T07:53:46.799Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/koa-function9983/sites 200
+[debug] [2025-06-04T07:53:46.800Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/koa-function9983/sites {"sites":[{"name":"projects/koa-function9983/sites/koa-function9983","defaultUrl":"https://koa-function9983.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-06-04T07:53:46.800Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:53:46.800Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:53:46.800Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/webApps/-/config [none]
+[debug] [2025-06-04T07:53:47.450Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/webApps/-/config 200
+[debug] [2025-06-04T07:53:47.450Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/webApps/-/config {"projectId":"koa-function9983","storageBucket":"koa-function9983.firebasestorage.app","apiKey":"AIzaSyAxVfhL-vnG7dVsjZr032bIRME9AXGdUlw","authDomain":"koa-function9983.firebaseapp.com","messagingSenderId":"93908774678"}
+[debug] [2025-06-04T07:53:47.470Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:53:47.470Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:53:47.471Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983 [none]
+[debug] [2025-06-04T07:53:47.790Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983 200
+[debug] [2025-06-04T07:53:47.790Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983 {"projectId":"koa-function9983","projectNumber":"93908774678","displayName":"koa-function9983","name":"projects/koa-function9983","resources":{"hostingSite":"koa-function9983"},"state":"ACTIVE","etag":"1_1b1bc109-f8f1-4c53-b12d-60425b432e13"}
+[info] i  functions: Watching "F:\Avada Training\Week 3\firebase-learn\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"F:\\Avada Training\\Week 3\\firebase-learn\\functions\" for Cloud Functions..."}}
+[info] i  hosting[koa-function9983]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[koa-function9983]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2025-06-04T07:53:47.814Z] Validating nodejs source
+[debug] [2025-06-04T07:53:49.119Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "src/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "koa": "^3.0.0",
+    "koa-body": "^6.0.1",
+    "koa-router": "^13.0.1",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-06-04T07:53:49.119Z] Building nodejs source
+[debug] [2025-06-04T07:53:49.120Z] Failed to find version of module node: reached end of search path F:\Avada Training\Week 3\firebase-learn\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-06-04T07:53:49.121Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-06-04T07:53:49.129Z] Found firebase-functions binary at 'F:\Avada Training\Week 3\firebase-learn\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8480
+
+[debug] [2025-06-04T07:53:49.723Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[info] +  functions[us-central1-helloWorld]: http function initialized (http://localhost:5001/koa-function9983/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/koa-function9983/us-central1/helloWorld)."}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1/api for local Function us-central1/api
+[debug] [2025-06-04T07:53:56.072Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1/api/api/helloworld 
+[debug] [2025-06-04T07:53:56.076Z] [work-queue] {"queuedWork":["/koa-function9983/us-central1/api/api/helloworld-2025-06-04T07:53:56.076Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-04T07:53:56.076Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/koa-function9983/us-central1/api/api/helloworld-2025-06-04T07:53:56.076Z"],"workRunningCount":1}
+[debug] [2025-06-04T07:53:56.080Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-04T07:53:56.081Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1/api/api/helloworld 404
+[debug] [2025-06-04T07:53:56.081Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1/api/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:53:56 +0000] "GET /api/helloworld HTTP/1.1" 404 84 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:53:56 +0000] \"GET /api/helloworld HTTP/1.1\" 404 84 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1/api for local Function us-central1/api
+[debug] [2025-06-04T07:53:56.605Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1/api/api/helloworld 
+[debug] [2025-06-04T07:53:56.606Z] [work-queue] {"queuedWork":["/koa-function9983/us-central1/api/api/helloworld-2025-06-04T07:53:56.606Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-04T07:53:56.606Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/koa-function9983/us-central1/api/api/helloworld-2025-06-04T07:53:56.606Z"],"workRunningCount":1}
+[debug] [2025-06-04T07:53:56.607Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-04T07:53:56.608Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1/api/api/helloworld 404
+[debug] [2025-06-04T07:53:56.608Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1/api/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:53:56 +0000] "GET /api/helloworld HTTP/1.1" 404 84 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:53:56 +0000] \"GET /api/helloworld HTTP/1.1\" 404 84 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1/api for local Function us-central1/api
+[debug] [2025-06-04T07:53:56.777Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1/api/api/helloworld 
+[debug] [2025-06-04T07:53:56.778Z] [work-queue] {"queuedWork":["/koa-function9983/us-central1/api/api/helloworld-2025-06-04T07:53:56.778Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-04T07:53:56.778Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/koa-function9983/us-central1/api/api/helloworld-2025-06-04T07:53:56.778Z"],"workRunningCount":1}
+[debug] [2025-06-04T07:53:56.778Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-04T07:53:56.779Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1/api/api/helloworld 404
+[debug] [2025-06-04T07:53:56.779Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1/api/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:53:56 +0000] "GET /api/helloworld HTTP/1.1" 404 84 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:53:56 +0000] \"GET /api/helloworld HTTP/1.1\" 404 84 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1/api for local Function us-central1/api
+[debug] [2025-06-04T07:53:56.922Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1/api/api/helloworld 
+[debug] [2025-06-04T07:53:56.923Z] [work-queue] {"queuedWork":["/koa-function9983/us-central1/api/api/helloworld-2025-06-04T07:53:56.923Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-04T07:53:56.923Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/koa-function9983/us-central1/api/api/helloworld-2025-06-04T07:53:56.923Z"],"workRunningCount":1}
+[debug] [2025-06-04T07:53:56.924Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-04T07:53:56.924Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1/api/api/helloworld 404
+[debug] [2025-06-04T07:53:56.924Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1/api/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:53:56 +0000] "GET /api/helloworld HTTP/1.1" 404 84 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:53:56 +0000] \"GET /api/helloworld HTTP/1.1\" 404 84 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] Shutting down...
+[debug] [2025-06-04T07:54:25.440Z] ----------------------------------------------------------------------
+[debug] [2025-06-04T07:54:25.442Z] Command:       C:\nvm4w\nodejs\node.exe C:\nvm4w\nodejs\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2025-06-04T07:54:25.442Z] CLI Version:   14.5.1
+[debug] [2025-06-04T07:54:25.442Z] Platform:      win32
+[debug] [2025-06-04T07:54:25.442Z] Node Version:  v22.16.0
+[debug] [2025-06-04T07:54:25.443Z] Time:          Wed Jun 04 2025 14:54:25 GMT+0700 (Indochina Time)
+[debug] [2025-06-04T07:54:25.443Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-04T07:54:25.597Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-04T07:54:25.597Z] > authorizing via signed-in user (truongdx01@avadagroup.com)
+[debug] [2025-06-04T07:54:25.597Z] [iam] checking project koa-function9983 for permissions ["firebase.projects.get"]
+[debug] [2025-06-04T07:54:25.598Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:54:25.598Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:54:25.599Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions [none]
+[debug] [2025-06-04T07:54:25.599Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions x-goog-quota-user=projects/koa-function9983
+[debug] [2025-06-04T07:54:25.599Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-04T07:54:26.590Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions 200
+[debug] [2025-06-04T07:54:26.591Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-04T07:54:26.592Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:54:26.592Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:54:26.592Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/koa-function9983/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-06-04T07:54:26.592Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/koa-function9983/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/koa-function9983
+[debug] [2025-06-04T07:54:27.890Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/koa-function9983/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-06-04T07:54:27.891Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/koa-function9983/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-06-04T07:54:27.891Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:54:27.891Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:54:27.891Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983 [none]
+[debug] [2025-06-04T07:54:28.194Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983 200
+[debug] [2025-06-04T07:54:28.194Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/koa-function9983 {"projectNumber":"93908774678","projectId":"koa-function9983","lifecycleState":"ACTIVE","name":"koa-function9983","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-06-04T02:08:44.877296Z","parent":{"type":"organization","id":"568162227722"}}
+[info] 
+[info] === Serving from 'F:\Avada Training\Week 3\firebase-learn'...
+[info] 
+[debug] [2025-06-04T07:54:28.203Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:54:28.203Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:54:28.212Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/koa-function9983/sites 
+[debug] [2025-06-04T07:54:28.219Z] defaultcredentials: writing to file C:\Users\dinh\AppData\Roaming\firebase\truongdx01_avadagroup_com_application_default_credentials.json
+[debug] [2025-06-04T07:54:28.220Z] Setting GAC to C:\Users\dinh\AppData\Roaming\firebase\truongdx01_avadagroup_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\dinh\\AppData\\Roaming\\firebase\\truongdx01_avadagroup_com_application_default_credentials.json"}}
+[debug] [2025-06-04T07:54:28.220Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:54:28.221Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:54:28.221Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/adminSdkConfig [none]
+[debug] [2025-06-04T07:54:28.870Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/koa-function9983/sites 200
+[debug] [2025-06-04T07:54:28.871Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/koa-function9983/sites {"sites":[{"name":"projects/koa-function9983/sites/koa-function9983","defaultUrl":"https://koa-function9983.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-06-04T07:54:28.871Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:54:28.871Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:54:28.871Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/webApps/-/config [none]
+[debug] [2025-06-04T07:54:28.873Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/adminSdkConfig 200
+[debug] [2025-06-04T07:54:28.873Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/adminSdkConfig {"projectId":"koa-function9983","storageBucket":"koa-function9983.firebasestorage.app"}
+[debug] [2025-06-04T07:54:29.368Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/webApps/-/config 200
+[debug] [2025-06-04T07:54:29.368Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983/webApps/-/config {"projectId":"koa-function9983","storageBucket":"koa-function9983.firebasestorage.app","apiKey":"AIzaSyAxVfhL-vnG7dVsjZr032bIRME9AXGdUlw","authDomain":"koa-function9983.firebaseapp.com","messagingSenderId":"93908774678"}
+[debug] [2025-06-04T07:54:29.383Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:54:29.383Z] Checked if tokens are valid: true, expires at: 1749026997222
+[debug] [2025-06-04T07:54:29.383Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983 [none]
+[debug] [2025-06-04T07:54:30.499Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983 200
+[debug] [2025-06-04T07:54:30.499Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/koa-function9983 {"projectId":"koa-function9983","projectNumber":"93908774678","displayName":"koa-function9983","name":"projects/koa-function9983","resources":{"hostingSite":"koa-function9983"},"state":"ACTIVE","etag":"1_1b1bc109-f8f1-4c53-b12d-60425b432e13"}
+[info] i  functions: Watching "F:\Avada Training\Week 3\firebase-learn\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"F:\\Avada Training\\Week 3\\firebase-learn\\functions\" for Cloud Functions..."}}
+[info] i  hosting[koa-function9983]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[koa-function9983]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2025-06-04T07:54:30.524Z] Validating nodejs source
+[debug] [2025-06-04T07:54:32.920Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "src/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "koa": "^3.0.0",
+    "koa-body": "^6.0.1",
+    "koa-router": "^13.0.1",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-06-04T07:54:32.920Z] Building nodejs source
+[debug] [2025-06-04T07:54:32.921Z] Failed to find version of module node: reached end of search path F:\Avada Training\Week 3\firebase-learn\functions\node_modules
+[info] +  functions: Using node@22 from host. 
+[debug] [2025-06-04T07:54:32.923Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-06-04T07:54:32.929Z] Found firebase-functions binary at 'F:\Avada Training\Week 3\firebase-learn\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8611
+
+[debug] [2025-06-04T07:54:33.459Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[info] +  functions[us-central1-helloWorld]: http function initialized (http://localhost:5001/koa-function9983/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/koa-function9983/us-central1/helloWorld)."}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1/helloWorld for local Function us-central1/helloWorld
+[debug] [2025-06-04T07:56:12.439Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1/helloWorld/api/helloworld 
+[debug] [2025-06-04T07:56:12.444Z] [work-queue] {"queuedWork":["/koa-function9983/us-central1/helloWorld/api/helloworld-2025-06-04T07:56:12.444Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-04T07:56:12.444Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/koa-function9983/us-central1/helloWorld/api/helloworld-2025-06-04T07:56:12.444Z"],"workRunningCount":1}
+[debug] [2025-06-04T07:56:12.445Z] Accepted request GET /koa-function9983/us-central1/helloWorld/api/helloworld --> us-central1-helloWorld
+[debug] [2025-06-04T07:56:12.447Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-04T07:56:12.448Z] [functions] Got req.url=/koa-function9983/us-central1/helloWorld/api/helloworld, mapping to path=/api/helloworld {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/koa-function9983/us-central1/helloWorld/api/helloworld, mapping to path=/api/helloworld"}}
+[debug] [2025-06-04T07:56:12.460Z] [worker-pool] addWorker(us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-helloWorld)"}}
+[debug] [2025-06-04T07:56:12.461Z] [worker-pool] Adding worker with key us-central1-helloWorld, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-helloWorld, total=1"}}
+[debug] [2025-06-04T07:56:13.348Z] [runtime-status] [16732] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"F:\\Avada Training\\Week 3\\firebase-learn\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16732] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"F:\\\\Avada Training\\\\Week 3\\\\firebase-learn\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2025-06-04T07:56:13.348Z] [runtime-status] [16732] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"F:\\Avada Training\\Week 3\\firebase-learn\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16732] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"F:\\\\Avada Training\\\\Week 3\\\\firebase-learn\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-06-04T07:56:13.349Z] [runtime-status] [16732] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16732] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2025-06-04T07:56:13.349Z] [runtime-status] [16732] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"F:\\Avada Training\\Week 3\\firebase-learn\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16732] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"F:\\\\Avada Training\\\\Week 3\\\\firebase-learn\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-06-04T07:56:13.605Z] [runtime-status] [16732] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16732] Checked functions.config() {\"config\":{}}"}}
+[debug] [2025-06-04T07:56:13.606Z] [runtime-status] [16732] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"6.3.2","resolution":"F:\\Avada Training\\Week 3\\firebase-learn\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16732] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"F:\\\\Avada Training\\\\Week 3\\\\firebase-learn\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}}"}}
+[debug] [2025-06-04T07:56:13.606Z] [runtime-status] [16732] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"F:\\Avada Training\\Week 3\\firebase-learn\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16732] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"F:\\\\Avada Training\\\\Week 3\\\\firebase-learn\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-06-04T07:56:13.610Z] [runtime-status] [16732] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"F:\\Avada Training\\Week 3\\firebase-learn\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16732] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"F:\\\\Avada Training\\\\Week 3\\\\firebase-learn\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2025-06-04T07:56:13.612Z] [runtime-status] [16732] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"F:\\Avada Training\\Week 3\\firebase-learn\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16732] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"F:\\\\Avada Training\\\\Week 3\\\\firebase-learn\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2025-06-04T07:56:13.612Z] [runtime-status] [16732] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.7.0","resolution":"F:\\Avada Training\\Week 3\\firebase-learn\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16732] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"F:\\\\Avada Training\\\\Week 3\\\\firebase-learn\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2025-06-04T07:56:13.723Z] [runtime-status] [16732] Functions runtime initialized. {"cwd":"F:\\Avada Training\\Week 3\\firebase-learn\\functions","node_version":"22.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16732] Functions runtime initialized. {\"cwd\":\"F:\\\\Avada Training\\\\Week 3\\\\firebase-learn\\\\functions\",\"node_version\":\"22.16.0\"}"}}
+[debug] [2025-06-04T07:56:13.723Z] [runtime-status] [16732] Listening to port: \\?\pipe\fire_emu_a59bbef1e513d7ec {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [16732] Listening to port: \\\\?\\pipe\\fire_emu_a59bbef1e513d7ec"}}
+[debug] [2025-06-04T07:56:13.796Z] [worker-us-central1-helloWorld-ab9d491a-416f-4a38-a40e-bd9b90cce9f7]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-ab9d491a-416f-4a38-a40e-bd9b90cce9f7]: IDLE"}}
+[debug] [2025-06-04T07:56:13.796Z] [worker-pool] submitRequest(triggerId=us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-helloWorld)"}}
+[info] i  functions: Beginning execution of "us-central1-helloWorld" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Beginning execution of \"us-central1-helloWorld\""}}
+[debug] [2025-06-04T07:56:13.797Z] [worker-us-central1-helloWorld-ab9d491a-416f-4a38-a40e-bd9b90cce9f7]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-ab9d491a-416f-4a38-a40e-bd9b90cce9f7]: BUSY"}}
+[debug] [2025-06-04T07:56:13.801Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-helloWorld" in 4.7317ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finished \"us-central1-helloWorld\" in 4.7317ms"}}
+[debug] [2025-06-04T07:56:13.802Z] [worker-us-central1-helloWorld-ab9d491a-416f-4a38-a40e-bd9b90cce9f7]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-ab9d491a-416f-4a38-a40e-bd9b90cce9f7]: IDLE"}}
+[debug] [2025-06-04T07:56:13.802Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-04T07:56:13.802Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-04T07:56:13.802Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-04T07:56:13.802Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1/helloWorld/api/helloworld 200
+[debug] [2025-06-04T07:56:13.802Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1/helloWorld/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:56:13 +0000] "GET /api/helloworld HTTP/1.1" 200 16 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:56:13 +0000] \"GET /api/helloworld HTTP/1.1\" 200 16 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1/helloWorld for local Function us-central1/helloWorld
+[debug] [2025-06-04T07:59:41.153Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1/helloWorld/api/helloworld 
+[debug] [2025-06-04T07:59:41.156Z] [work-queue] {"queuedWork":["/koa-function9983/us-central1/helloWorld/api/helloworld-2025-06-04T07:59:41.156Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-04T07:59:41.156Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/koa-function9983/us-central1/helloWorld/api/helloworld-2025-06-04T07:59:41.156Z"],"workRunningCount":1}
+[debug] [2025-06-04T07:59:41.156Z] Accepted request GET /koa-function9983/us-central1/helloWorld/api/helloworld --> us-central1-helloWorld
+[debug] [2025-06-04T07:59:41.159Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-04T07:59:41.159Z] [functions] Got req.url=/koa-function9983/us-central1/helloWorld/api/helloworld, mapping to path=/api/helloworld {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/koa-function9983/us-central1/helloWorld/api/helloworld, mapping to path=/api/helloworld"}}
+[debug] [2025-06-04T07:59:41.159Z] [worker-pool] submitRequest(triggerId=us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-helloWorld)"}}
+[info] i  functions: Beginning execution of "us-central1-helloWorld" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Beginning execution of \"us-central1-helloWorld\""}}
+[debug] [2025-06-04T07:59:41.160Z] [worker-us-central1-helloWorld-ab9d491a-416f-4a38-a40e-bd9b90cce9f7]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-ab9d491a-416f-4a38-a40e-bd9b90cce9f7]: BUSY"}}
+[debug] [2025-06-04T07:59:41.164Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-helloWorld" in 4.4034ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finished \"us-central1-helloWorld\" in 4.4034ms"}}
+[debug] [2025-06-04T07:59:41.165Z] [worker-us-central1-helloWorld-ab9d491a-416f-4a38-a40e-bd9b90cce9f7]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-ab9d491a-416f-4a38-a40e-bd9b90cce9f7]: IDLE"}}
+[debug] [2025-06-04T07:59:41.165Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-04T07:59:41.165Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-04T07:59:41.165Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-04T07:59:41.166Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1/helloWorld/api/helloworld 200
+[debug] [2025-06-04T07:59:41.166Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1/helloWorld/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:07:59:41 +0000] "GET /api/helloworld HTTP/1.1" 200 16 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:07:59:41 +0000] \"GET /api/helloworld HTTP/1.1\" 200 16 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/2 to http://localhost:5001/koa-function9983/us-central1/helloWorld for local Function us-central1/helloWorld
+[debug] [2025-06-04T08:00:51.066Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1/helloWorld/api/2 
+[debug] [2025-06-04T08:00:51.070Z] [work-queue] {"queuedWork":["/koa-function9983/us-central1/helloWorld/api/2-2025-06-04T08:00:51.070Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-04T08:00:51.070Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/koa-function9983/us-central1/helloWorld/api/2-2025-06-04T08:00:51.070Z"],"workRunningCount":1}
+[debug] [2025-06-04T08:00:51.070Z] Accepted request GET /koa-function9983/us-central1/helloWorld/api/2 --> us-central1-helloWorld
+[debug] [2025-06-04T08:00:51.073Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-04T08:00:51.073Z] [functions] Got req.url=/koa-function9983/us-central1/helloWorld/api/2, mapping to path=/api/2 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/koa-function9983/us-central1/helloWorld/api/2, mapping to path=/api/2"}}
+[debug] [2025-06-04T08:00:51.073Z] [worker-pool] submitRequest(triggerId=us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-helloWorld)"}}
+[info] i  functions: Beginning execution of "us-central1-helloWorld" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Beginning execution of \"us-central1-helloWorld\""}}
+[debug] [2025-06-04T08:00:51.073Z] [worker-us-central1-helloWorld-ab9d491a-416f-4a38-a40e-bd9b90cce9f7]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-ab9d491a-416f-4a38-a40e-bd9b90cce9f7]: BUSY"}}
+[debug] [2025-06-04T08:00:51.077Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-helloWorld" in 3.5552ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finished \"us-central1-helloWorld\" in 3.5552ms"}}
+[debug] [2025-06-04T08:00:51.077Z] [worker-us-central1-helloWorld-ab9d491a-416f-4a38-a40e-bd9b90cce9f7]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-ab9d491a-416f-4a38-a40e-bd9b90cce9f7]: IDLE"}}
+[debug] [2025-06-04T08:00:51.077Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-04T08:00:51.078Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-04T08:00:51.078Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-04T08:00:51.078Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1/helloWorld/api/2 404
+[debug] [2025-06-04T08:00:51.078Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1/helloWorld/api/2 [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:08:00:51 +0000] "GET /api/2 HTTP/1.1" 404 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:08:00:51 +0000] \"GET /api/2 HTTP/1.1\" 404 9 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /api/helloworld to http://localhost:5001/koa-function9983/us-central1/helloWorld for local Function us-central1/helloWorld
+[debug] [2025-06-04T08:01:34.790Z] >>> [apiv2][query] GET http://localhost:5001/koa-function9983/us-central1/helloWorld/api/helloworld 
+[debug] [2025-06-04T08:01:34.793Z] [work-queue] {"queuedWork":["/koa-function9983/us-central1/helloWorld/api/helloworld-2025-06-04T08:01:34.793Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-04T08:01:34.793Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/koa-function9983/us-central1/helloWorld/api/helloworld-2025-06-04T08:01:34.793Z"],"workRunningCount":1}
+[debug] [2025-06-04T08:01:34.793Z] Accepted request GET /koa-function9983/us-central1/helloWorld/api/helloworld --> us-central1-helloWorld
+[debug] [2025-06-04T08:01:34.796Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-04T08:01:34.796Z] [functions] Got req.url=/koa-function9983/us-central1/helloWorld/api/helloworld, mapping to path=/api/helloworld {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/koa-function9983/us-central1/helloWorld/api/helloworld, mapping to path=/api/helloworld"}}
+[debug] [2025-06-04T08:01:34.797Z] [worker-pool] submitRequest(triggerId=us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-helloWorld)"}}
+[info] i  functions: Beginning execution of "us-central1-helloWorld" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Beginning execution of \"us-central1-helloWorld\""}}
+[debug] [2025-06-04T08:01:34.797Z] [worker-us-central1-helloWorld-ab9d491a-416f-4a38-a40e-bd9b90cce9f7]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-ab9d491a-416f-4a38-a40e-bd9b90cce9f7]: BUSY"}}
+[debug] [2025-06-04T08:01:34.800Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-helloWorld" in 2.975ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finished \"us-central1-helloWorld\" in 2.975ms"}}
+[debug] [2025-06-04T08:01:34.800Z] [worker-us-central1-helloWorld-ab9d491a-416f-4a38-a40e-bd9b90cce9f7]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-ab9d491a-416f-4a38-a40e-bd9b90cce9f7]: IDLE"}}
+[debug] [2025-06-04T08:01:34.800Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-06-04T08:01:34.800Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-06-04T08:01:34.800Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-04T08:01:34.801Z] <<< [apiv2][status] GET http://localhost:5001/koa-function9983/us-central1/helloWorld/api/helloworld 200
+[debug] [2025-06-04T08:01:34.801Z] <<< [apiv2][body] GET http://localhost:5001/koa-function9983/us-central1/helloWorld/api/helloworld [stream]
+[info] i  hosting: ::1 - - [04/Jun/2025:08:01:34 +0000] "GET /api/helloworld HTTP/1.1" 200 16 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [04/Jun/2025:08:01:34 +0000] \"GET /api/helloworld HTTP/1.1\" 200 16 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\""}}

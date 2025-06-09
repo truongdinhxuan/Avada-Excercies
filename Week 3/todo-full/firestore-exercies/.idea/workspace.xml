@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="24710744-9950-410d-8f55-07c3e5be22b6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Week 1/NodeJs Exercies/Ex1/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 1/NodeJs Exercies/Ex1/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 1/NodeJs Exercies/Ex2/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 1/NodeJs Exercies/Ex2/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 1/NodeJs Exercies/Ex3/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 1/NodeJs Exercies/Ex3/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 1/NodeJs Exercies/Ex5/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 1/NodeJs Exercies/Ex5/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 2/shopify-app/src/components/Page/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 2/shopify-app/src/components/Page/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 2/shopify-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 2/shopify-app/src/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2y2H85ULIRHy0VOysrsGwrPUeE1" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.addData.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Avada Training/Week 3/todo-full/firestore-exercies&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.serve.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;E:\\WebStorm 2025.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Avada Training\Week 3\todo-full\firestore-exercies\functions" />
+      <recent name="F:\Avada Training\Week 3\firestore-exercies\functions\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.serve">
+    <configuration name="addData.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/functions/src/addData.js" working-dir="$PROJECT_DIR$/functions/src">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/functions/src/index.js" working-dir="$PROJECT_DIR$/functions/src">
+      <method v="2" />
+    </configuration>
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/functions/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.serve" />
+        <item itemvalue="Node.js.index.js" />
+        <item itemvalue="Node.js.addData.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-WS-251.25410.117" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="24710744-9950-410d-8f55-07c3e5be22b6" name="Changes" comment="" />
+      <created>1749025586071</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749025586071</updated>
+      <workItem from="1749025587134" duration="2840000" />
+      <workItem from="1749051151300" duration="1500000" />
+      <workItem from="1749086940538" duration="805000" />
+      <workItem from="1749087794767" duration="10032000" />
+      <workItem from="1749098876630" duration="3997000" />
+      <workItem from="1749113693721" duration="2374000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

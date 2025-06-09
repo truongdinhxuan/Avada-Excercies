@@ -1,59 +1,50 @@
 import { Box, Page, ResourceList, ResourceItem } from "@shopify/polaris"
 import { useState, useCallback } from "react"
+import { v4 as uuidv4 } from "uuid"
 import GroupActions from "./GroupActions"
 import CreateModal from "./CreateModal"
 import BulkAction from "./BulkActions"
+import { ITEMS } from "../../contants"
 
 function MainPage() {
     const [isActiveModal, setIsActiveModal] = useState(false)
     const [selectedItems, setSelectedItems] = useState([])
-    // const [isComplete, setIsComplete] = useState(false)
-    // Modal
-    const handleisActiveModal = useCallback(() => {
-        setIsActiveModal(!isActiveModal)
-    }, [isActiveModal])
-    // Store items function
-    const [items, setItems] = useState([
-        {
-            id: '1',
-            title: 'Todo 1',
-            isComplete: true
-        },
-        {
-            id: '2',
-            title: 'Todo 2',
-            isComplete: false
-        }
-    ])
+    const [items, setItems] = useState(ITEMS)
+
+    // Modal toggle
+    const handleToggleModal = useCallback(() => {
+        setIsActiveModal(prev => !prev)
+    }, [])
+
+    // Add new item
     const handleSaveItem = useCallback((title) => {
-        const newId = Math.random().toString()
         const newItem = {
-            id: newId,
-            title: title,
+            id: uuidv4(),
+            title,
             isComplete: false
         }
         setItems(prev => [...prev, newItem])
         setIsActiveModal(false)
     }, [])
-    // Select items
+
+    // Handle selection change
     const handleSelectionChange = useCallback((selected) => {
         setSelectedItems(selected)
         console.log(selected)
     }, [])
-    // Delete item
-    const handleDeleteSelectedItems = useCallback(() => {
-        setItems(prev => prev.filter(item => !selectedItems.includes(item.id)))
+
+    // Delete selected items by ID
+    const handleDeleteSelectedItems = useCallback((selected) => {
+        setItems(prev => prev.filter(item => !selected.includes(item.id)))
         setSelectedItems([])
-    }, [selectedItems])
+    }, [])
+
+    // Delete items by index
     const handleDeleteItemsByIndex = useCallback((indices) => {
-        if (!Array.isArray(indices)) {
-            indices = [indices]
-        }
+        const indexes = Array.isArray(indices) ? indices : [indices]
         setItems(prev => {
             const newItems = [...prev]
-            const sortedIndices = [...indices].sort((a, b) => b - a)
-
-            sortedIndices.forEach(index => {
+            indexes.sort((a, b) => b - a).forEach(index => {
                 if (index >= 0 && index < newItems.length) {
                     newItems.splice(index, 1)
                 }
@@ -61,31 +52,42 @@ function MainPage() {
             return newItems
         })
     }, [])
-    // Complete and Incomplete item
-    const handleIsComplete = useCallback((itemId) => {
-        setItems(prev => prev.map(item =>
-            item.id === itemId
-                ? { ...item, isComplete: !item.isComplete }
-                : item
-        ))
-    }, [])
-    const handleBulkComplete = useCallback(() => {
-        setItems(prev => prev.map(item =>
-            selectedItems.includes(item.id)
-                ? { ...item, isComplete: true }
-                : item
-        ))
-        setSelectedItems([])
-    }, [selectedItems])
 
-    const handleBulkIncomplete = useCallback(() => {
-        setItems(prev => prev.map(item =>
-            selectedItems.includes(item.id)
-                ? { ...item, isComplete: false }
-                : item
-        ))
+    // Toggle item complete
+    const handleIsComplete = useCallback((itemId) => {
+        setItems(prev =>
+            prev.map(item =>
+                item.id === itemId
+                    ? { ...item, isComplete: !item.isComplete }
+                    : item
+            )
+        )
+    }, [])
+
+    // Mark selected items as complete
+    const handleBulkComplete = useCallback((selected) => {
+        setItems(prev =>
+            prev.map(item =>
+                selected.includes(item.id)
+                    ? { ...item, isComplete: true }
+                    : item
+            )
+        )
         setSelectedItems([])
-    }, [selectedItems])
+    }, [])
+
+    // Mark selected items as incomplete
+    const handleBulkIncomplete = useCallback((selected) => {
+        setItems(prev =>
+            prev.map(item =>
+                selected.includes(item.id)
+                    ? { ...item, isComplete: false }
+                    : item
+            )
+        )
+        setSelectedItems([])
+    }, [])
+
     // Main body page
     const BodyPage = (
         <Box>
@@ -114,9 +116,9 @@ function MainPage() {
             />
             <BulkAction
                 open={selectedItems.length >= 1}
-                onDelete={handleDeleteSelectedItems}
-                onBulkComplete={handleBulkComplete}
-                onBulkIncomplete={handleBulkIncomplete}
+                onDelete={() => handleDeleteSelectedItems(selectedItems)}
+                onBulkComplete={() => handleBulkComplete(selectedItems)}
+                onBulkIncomplete={() => handleBulkIncomplete(selectedItems)}
             />
         </Box>
     )
@@ -126,13 +128,13 @@ function MainPage() {
             title="Todoes"
             primaryAction={{
                 content: 'Create',
-                onAction: handleisActiveModal,
+                onAction: handleToggleModal,
             }}
         >
             {BodyPage}
             <CreateModal
                 open={isActiveModal}
-                onClose={handleisActiveModal}
+                onClose={handleToggleModal}
                 onSave={handleSaveItem}
             />
         </Page>
