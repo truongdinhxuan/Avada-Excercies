@@ -10,23 +10,21 @@ function App() {
     { text: "Todo 3", isCompleted: false },
   ]
   const [todos, setTodos] = useState(todoList)
-  
+
   const addTodo = text => {
-    const newTodos = [...todoList, {text}]
+    const newTodos = [...todos, { text, isCompleted: false }]
     setTodos(newTodos)
   }
-
   const completeTodo = index => {
     const newTodos = [...todos]
-    newTodos[index].isCompleted=true
-    setTodos(newTodos) 
+    newTodos[index].isCompleted = true
+    setTodos(newTodos)
+  }
+  // filter không làm thay đổi mảng gốc, tuân theo quy tắc immutability của React
+  const removeTodo = (indexToRemove) => {
+    setTodos(todos => todos.filter((_, index) => index !== indexToRemove))
   }
 
-  const removeTodo = index => {
-    const newTodos = [...todos];
-    newTodos.splice(index, 1);
-    setTodos(newTodos);
-  }
   return (
     <div className="app">
       <div className='todo-list'>

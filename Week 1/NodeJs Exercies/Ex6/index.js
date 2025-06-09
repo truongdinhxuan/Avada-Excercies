@@ -1,12 +1,7 @@
 //Sort the list of users by the postsCount value descending?
+import { fetchAllData } from '../HelperAPI.js'
 const fetchAPI = async () => {
-    const usersData = await fetch("https://jsonplaceholder.typicode.com/users")
-    const commentsData = await fetch("https://jsonplaceholder.typicode.com/comments")
-    const postsData = await fetch("https://jsonplaceholder.typicode.com/posts")
-
-    const users = await usersData.json()
-    const posts = await postsData.json()
-    const comments = await commentsData.json()
+    const { users, comments, posts } = await fetchAllData()
     // console.log(comments)
     const mergeData = users.map(user => {
         const userPosts = posts.filter(post => post.userId === user.id);
@@ -21,8 +16,8 @@ const fetchAPI = async () => {
         };
     })
 
-    mergeData.sort((a,b) => b.countPosts - a.countPosts)
-    console.dir(mergeData, {depth: null})
+    mergeData.sort((a, b) => b.countPosts - a.countPosts)
+    console.dir(mergeData, { depth: null })
 }
 
 fetchAPI()

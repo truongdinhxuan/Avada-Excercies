@@ -1,12 +1,7 @@
 // 2. Get all the posts and comments from the API. Map the data with the users array. The data format should be like this
-const fetchAPI = async () => {
-    const usersData = await fetch("https://jsonplaceholder.typicode.com/users")
-    const commentsData = await fetch("https://jsonplaceholder.typicode.com/comments")
-    const postsData = await fetch("https://jsonplaceholder.typicode.com/posts")
-
-    const users = await usersData.json()
-    const posts = await postsData.json()
-    const comments = await commentsData.json()
+import { fetchAllData } from '../HelperAPI.js'
+const loadData = async () => {
+    const { users, comments, posts } = await fetchAllData()
     // console.log(comments)
     const mergeData = users.map(user => {
         const userPosts = posts.filter(post => post.userId === user.id)
@@ -19,9 +14,9 @@ const fetchAPI = async () => {
             comments: userComments
         };
     })
-    
+
     console.dir(mergeData, { depth: null });
 
 }
 
-fetchAPI()
+loadData()

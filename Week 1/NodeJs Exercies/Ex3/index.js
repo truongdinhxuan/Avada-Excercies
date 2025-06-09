@@ -1,12 +1,8 @@
 // 3. Filter only users with more than 3 comments.
-const fetchAPI = async () => {
-    const usersData = await fetch("https://jsonplaceholder.typicode.com/users")
-    const commentsData = await fetch("https://jsonplaceholder.typicode.com/comments")
-    const postsData = await fetch("https://jsonplaceholder.typicode.com/posts")
+import { fetchAllData } from '../HelperAPI.js'
 
-    const users = await usersData.json()
-    const posts = await postsData.json()
-    const comments = await commentsData.json()
+const fetchAPI = async () => {
+    const { users, comments, posts } = await fetchAllData()
     // console.log(comments)
     const mergeData = users.map(user => {
         const userPosts = posts.filter(post => post.userId === user.id);
