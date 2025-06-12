@@ -1,11 +1,10 @@
 import axios from "axios"
-import dotenv from "dotenv";
-
-dotenv.config()
 
 const instance = axios.create({
-    baseURL: process.env.API_URL,
-    withCredentials: true
+    baseURL: process.env.REACT_APP_API_URL,
+    headers: {
+        "Content-Type": "application/json"
+    }
 })
 // Add a request interceptor
 instance.interceptors.request.use(function (config) {

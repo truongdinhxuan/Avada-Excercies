@@ -3,10 +3,10 @@ import { useState, useCallback } from "react"
 
 /**
  * @description This component renders a modal with a text field for the item title and buttons to save or cancel the action.
- * @param {Object: { open: boolean, onClose: function, onSave: function }} props - The component props.
+ * @param {Object: { open: boolean, onClose: function, onSave: function, errorMessage: string }} props - The component props. 
  * @returns {JSX.Element} - The rendered modal component.
  */
-const CreateItemModal = ({ open, onClose, onSave }) => {
+const CreateItemModal = ({ open, onClose, onSave, errorMessage, isLoading }) => {
   const [valueNewItem, setValueNewItem] = useState("")
 
   const handleChangeTextField = useCallback(
@@ -31,7 +31,8 @@ const CreateItemModal = ({ open, onClose, onSave }) => {
       title="Create new Todo"
       primaryAction={{
         content: "Add",
-        onAction: handleSave
+        onAction: handleSave,
+        loading: isLoading,
       }}
       secondaryActions={[
         {
@@ -46,6 +47,9 @@ const CreateItemModal = ({ open, onClose, onSave }) => {
           value={valueNewItem}
           onChange={handleChangeTextField}
         />
+        {errorMessage && (
+          <p style={{ color: 'red' }}>{errorMessage}</p>
+        )}
       </Modal.Section>
     </Modal>
   )

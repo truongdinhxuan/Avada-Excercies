@@ -1,11 +1,11 @@
 import { Text, Badge, Button } from "@shopify/polaris"
-const GroupActions = ({ onDelete, title, isComplete, handleIsComplete }) => {
+const GroupActions = ({ onDelete, title, isCompleted, handleStatusTodo }) => {
     // Delete a todo
     const handleDelete = () => {
         onDelete()
     }
     const handleToggleComplete = () => {
-        handleIsComplete()
+        handleStatusTodo()
     }
     return (
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -15,7 +15,7 @@ const GroupActions = ({ onDelete, title, isComplete, handleIsComplete }) => {
                 {title}
             </Text>
             <div className="group-actions">
-                {isComplete
+                {isCompleted
                 ?<Badge
                     tone="success"
                 >
@@ -31,10 +31,9 @@ const GroupActions = ({ onDelete, title, isComplete, handleIsComplete }) => {
                         Incomplete
                     </span>
                 </Badge>}
-                
-                <Button
-                    onClick={handleToggleComplete}
-                >Complete</Button>
+                {
+                    isCompleted ? <Button onClick={handleToggleComplete}>Incomplete</Button> : <Button onClick={handleToggleComplete}>Complete</Button>
+                }
                 <Button
                     tone="critical"
                     onClick={handleDelete}

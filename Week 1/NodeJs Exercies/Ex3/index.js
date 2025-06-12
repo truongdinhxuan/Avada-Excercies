@@ -1,5 +1,6 @@
 // 3. Filter only users with more than 3 comments.
-const {APIHelper} = require ('../APIHelper')
+const {APIHelper} = require ('../APIHelper');
+
 const loadData = async () => {
     const { users, comments, posts } = await APIHelper()
     //helper

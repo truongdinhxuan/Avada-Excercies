@@ -1,5 +1,6 @@
 // 2. Get all the posts and comments from the API. Map the data with the users array. The data format should be like this
 const {APIHelper} = require ('../APIHelper')
+
 const loadData = async () => {
     const { users, comments, posts } = await APIHelper()
 

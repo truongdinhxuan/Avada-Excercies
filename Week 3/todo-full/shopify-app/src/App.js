@@ -1,8 +1,8 @@
-import { AppProvider, Frame } from '@shopify/polaris';
+import { Frame } from '@shopify/polaris';
 import '@shopify/polaris/build/esm/styles.css';
 import './App.css';
-import Header from './TopBar/TopBar';
-import MainPage from './Page/MainPage';
+import Header from './shared/TopBar';
+import MainPage from './features/todos/pages/MainPage';
 // import ResourceList from './Resource List/ResourceList';
 function App() {
   const Logo = {
@@ -14,14 +14,12 @@ function App() {
   };
   return (
     <>
-      <AppProvider>
-        <Frame style={{ height: '250px' }}
-          topBar={<Header />}
-          logo={Logo}
-        >
-          <MainPage/>
-        </Frame>
-      </AppProvider>
+      <Frame style={{ height: '250px' }}
+        topBar={<Header />}
+        logo={Logo}
+      >
+        <MainPage />
+      </Frame>
     </>
   )
 }
