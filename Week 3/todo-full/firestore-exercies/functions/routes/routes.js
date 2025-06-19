@@ -1,6 +1,6 @@
 const Router = require("koa-router");
 const todoHandler = require("../src/handlers/todoHandler/todoHandler");
-const todoInputMiddleware = require("../src/middleware/todoInputMiddleware");
+const todoValidate = require("../src/middleware/todoValidate");
 
 const router = new Router()
 
@@ -11,7 +11,7 @@ router.get("/todos", async (ctx) => {
     ...todos
   }
 });
-router.post("/todos", todoInputMiddleware, todoHandler.createNewTodos);
+router.post("/todos", todoValidate, todoHandler.createNewTodos);
 router.put("/todos/:id", todoHandler.updateSingleTodo);
 router.put("/todos", todoHandler.updateTodos);
 router.delete("/todos/:id", todoHandler.removeTodo);

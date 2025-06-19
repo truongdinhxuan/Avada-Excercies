@@ -1,6 +1,6 @@
 const yup = require('yup');
 
-const todoInputMiddleware = async (ctx, next) => {
+const todoValidate = async (ctx, next) => {
   try {
     const todoData = ctx.req.body;
     let schema = yup.object().shape({
@@ -9,7 +9,7 @@ const todoInputMiddleware = async (ctx, next) => {
     await schema.validate(todoData);
     await next();
   } catch (error) {
-    ctx.status = 400
+    ctx.status = 401
     ctx.body = {
       success: false,
       error: error.errors,
@@ -17,4 +17,4 @@ const todoInputMiddleware = async (ctx, next) => {
     }
   }
 }
-module.exports = todoInputMiddleware;
+module.exports = todoValidate;

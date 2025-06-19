@@ -97,11 +97,13 @@ export const useTodos = () => {
   const handleCompleteStatusTodos = useCallback(async (itemSelected) => {
     try {
       const itemsToUpdate = items.filter(item => itemSelected.includes(item.id));
-      const updatePromises = itemsToUpdate.map(item =>
-        updateTodo(item.id, { ...item, isCompleted: true })
-      );
+      const updatePromises = itemsToUpdate.map(item => ({
+        id: item.id,
+        isCompleted: true
+      }));
 
-      await Promise.all(updatePromises);
+      console.log('Updating todos:', updatePromises);
+      await updateTodos(updatePromises);
       // local update
       setItems(prev =>
         prev.map(item =>
@@ -117,11 +119,13 @@ export const useTodos = () => {
   const handleInCompleteStatusTodos = useCallback(async (itemSelected) => {
     try {
       const itemsToUpdate = items.filter(item => itemSelected.includes(item.id));
-      const updatePromises = itemsToUpdate.map(item =>
-        updateTodo(item.id, { ...item, isCompleted: false })
-      );
 
-      await Promise.all(updatePromises);
+      const updatePromises = itemsToUpdate.map(item => ({
+        id: item.id,
+        isCompleted: false
+      }));
+
+      await updateTodos(updatePromises);
       setItems(prev =>
         prev.map(item =>
           itemSelected.includes(item.id)

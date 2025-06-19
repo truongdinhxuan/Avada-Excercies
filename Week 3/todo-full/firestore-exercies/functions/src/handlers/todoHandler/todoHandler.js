@@ -7,40 +7,19 @@ const {
   updateBulkTodo
 } = require("../../database/todoRepository")
 
-const getAllTodos = async (ctx) => {
-  let {limit, orderBy, sort} = ctx.query
-  let todos = await getTodos()
+async function getAllTodos(ctx) {
+  try {
+    const {limit, orderBy, orderDirection} = ctx.query;
+    const todos = await getTodos({limit, orderBy, orderDirection});
 
-  if (orderBy) {
-    todos = todos.data.sort((a, b) => {
-      if (a[orderBy] < b[orderBy]) return -1;
-      if (a[orderBy] > b[orderBy]) return 1;
-      return 0;
-    });
+    return todos;
+  } catch (error) {
+    ctx.status = 500;
+    ctx.body = {message: error.message};
   }
-
-  if (sort) {
-    if (sort === "desc") {
-      todos = todos.data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
-    } else if (sort === "asc") {
-      todos = todos.data.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))
-    } else {
-      ctx.status = 400
-      ctx.body = {
-        error: 'Enter "desc" or "asc" for sort'
-      }
-    }
-  }
-
-  if (limit) {
-    limit = parseInt(limit);
-    if (!isNaN(limit) && limit > 0) {
-      todos = todos.data.slice(0, limit);
-    }
-  }
-  return todos
 }
-const createNewTodos = async (ctx) => {
+
+async function createNewTodos(ctx) {
   try {
     const todoData = ctx.req.body
 
@@ -55,7 +34,8 @@ const createNewTodos = async (ctx) => {
     ctx.message = error.message;
   }
 }
-const updateSingleTodo = async (ctx) => {
+
+async function updateSingleTodo(ctx) {
   try {
     const todoId = ctx.params.id;
     const todoData = ctx.req.body
@@ -69,7 +49,8 @@ const updateSingleTodo = async (ctx) => {
     ctx.message = error.message;
   }
 }
-const updateTodos = async (ctx) => {
+
+async function updateTodos(ctx) {
   try {
     const updates = ctx.req.body;
     console.log(updates);
@@ -94,17 +75,17 @@ const updateTodos = async (ctx) => {
       };
       return;
     }
-    for (let i = 0; i < updates.length; i++) {
-      const update = updates[i];
-      if (!update.id) {
-        ctx.status = 400;
-        ctx.body = {
-          error: `Update object at index ${i} is missing required 'id' field`
-        };
-        return;
-      }
-    }
-
+    // for (let i = 0; i < updates.length; i++) {
+    //   const update = updates[i];
+    //   if (!update.id) {
+    //     ctx.status = 400;
+    //     ctx.body = {
+    //       error: `Update object at index ${i} is missing required 'id' field`
+    //     };
+    //     return;
+    //   }
+    // }
+    console.log(updates);
     await updateBulkTodo(updates);
     ctx.status = 200;
     ctx.body = {
@@ -115,7 +96,8 @@ const updateTodos = async (ctx) => {
     ctx.message = error.message;
   }
 }
-const removeTodo = async (ctx) => {
+
+async function removeTodo(ctx) {
   try {
     const todoId = ctx.params.id;
     await deleteTodo(todoId);
@@ -128,7 +110,8 @@ const removeTodo = async (ctx) => {
     ctx.message = error.message;
   }
 }
-const removeTodos = async (ctx) => {
+
+async function removeTodos(ctx) {
   try {
     const todoIds = ctx.req.body.ids;
     console.log(todoIds);
@@ -142,4 +125,5 @@ const removeTodos = async (ctx) => {
     ctx.message = error.message;
   }
 }
+
 module.exports = {getAllTodos, createNewTodos, removeTodo, removeTodos, updateSingleTodo, updateTodos}

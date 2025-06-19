@@ -37,7 +37,8 @@ const CreateItemModal = ({ open, onClose, onSave, errorMessage, isLoading }) => 
       secondaryActions={[
         {
           content: 'Cancel',
-          onAction: handleClose
+          onAction: handleClose,
+          disabled: isLoading,
         }
       ]}
     >

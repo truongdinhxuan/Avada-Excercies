@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24710744-9950-410d-8f55-07c3e5be22b6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../Week 1/NodeJs Exercies/Ex2/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 1/NodeJs Exercies/Ex2/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Week 1/NodeJs Exercies/Ex3/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 1/NodeJs Exercies/Ex3/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Week 2/shopify-app/src/components/Page/CreateModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 2/shopify-app/src/components/Page/CreateModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Week 2/shopify-app/src/components/TopBar/TopBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 2/shopify-app/src/components/TopBar/TopBar.js" afterDir="false" />
-    </list>
+    <list default="true" id="24710744-9950-410d-8f55-07c3e5be22b6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,6 +117,13 @@
       <workItem from="1749652076181" duration="1000" />
       <workItem from="1749661229593" duration="4335000" />
       <workItem from="1749691651080" duration="1037000" />
+      <workItem from="1749698247100" duration="1000" />
+      <workItem from="1749713107649" duration="14000" />
+      <workItem from="1749715235503" duration="8945000" />
+      <workItem from="1749749098104" duration="1333000" />
+      <workItem from="1749778172943" duration="2037000" />
+      <workItem from="1749780354043" duration="353000" />
+      <workItem from="1749781359714" duration="18000" />
     </task>
     <servers />
   </component>

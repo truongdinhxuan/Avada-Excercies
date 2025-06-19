@@ -29,12 +29,23 @@ function MainPage() {
   const handleToggleModal = useCallback(() => {
     setIsActiveModal(prev => !prev)
   }, [])
+  const handleModalClose = useCallback(() => {
+    setIsLoading(false)
+    setErrorMessage('')
+    setIsActiveModal(false)
+  }, [])
 
   // Add new item
   const handleSaveItem = useCallback(async (title) => {
-    await create(title)
-    setIsLoading(true);
-    setIsActiveModal(false);
+    try {
+      setIsLoading(true)
+      await create(title)
+      setIsActiveModal(false)
+    } catch (error) {
+      setErrorMessage('Failed to create todo item')
+    } finally {
+      setIsLoading(false)
+    }
   }, [create])
 
   // Handle selection change
@@ -102,7 +113,7 @@ function MainPage() {
       {BodyPage}
       <CreateModal
         open={isActiveModal}
-        onClose={handleToggleModal}
+        onClose={handleModalClose}
         onSave={handleSaveItem}
         errorMessage={errorMessage}
         isLoading={isLoading}
